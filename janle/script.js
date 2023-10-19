@@ -1,9 +1,4 @@
-/*
-design by Voicu Apostol.
-design: https://dribbble.com/shots/3533847-Mini-Music-Player
-I can't find any open music api or mp3 api so i have to download all musics as mp3 file.
-You can fork on github: https://github.com/muhammederdem/mini-player
-*/
+
 
 new Vue({
   el: "#app",
@@ -21,7 +16,7 @@ new Vue({
           artist: "Sunflower - Shroomi",
           cover: "avatar.jpg",
           source: "track1.mp3",
-          url: "https://www.youtube.com/watch?v=zYPTZOs43d8",
+          url: "https://www.facebook.com/tuanh.lemai",
           favorited: false
         },
         
