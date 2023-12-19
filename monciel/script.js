@@ -12,11 +12,11 @@ new Vue({
       isTimerPlaying: false,
       tracks: [
         {
-          name: "la vie est faite de petit bonheur",
-          artist: "Sunflower - Shroomi",
+          name: "Mon amour pour toi est éternel",
+          artist: "mon ciel",
           cover: "avatar.jpg",
           source: "track1.mp3",
-          url: "https://www.facebook.com/tuanh.lemai",
+          url: "https://www.facebook.com/qgi.2706",
           favorited: false
         },
         
