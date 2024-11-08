@@ -1,0 +1,457 @@
+<!DOCTYPE html><html><head>
+    <title>Son Nguyen – NgmSonn</title>
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+
+        <meta charset="utf-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    
+    <meta name="description" content="Researcher in Computer Science - AI">
+    <meta property="og:description" content="Researcher in Computer Science - AI">
+    
+    <meta name="author" content="Son Nguyen">
+
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+  </head>
+
+  <body>
+  
+
+    <div id="main" role="main" class="container" style="margin-top: 20px;">
+      <style type="text/css">
+    .container{
+      max-width: 1100px !important;
+    }
+    body{
+        font-family: Optima, "Times New Roman", Times, serif;
+        font-weight: 200;
+        font-size: 20px;
+        /*background-color: rgb(43, 60, 197);*/
+        /*color: rgb(0, 79, 241);*/
+        /*color: white;*/
+        border-top:5px solid #387478;
+        border-bottom:5px solid #387478;
+    }
+    b{
+      color: #387478;
+    }
+    .posts{
+        /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+        font-size: 14px;
+
+    }
+    .news{
+      margin-top: 0;
+      line-height: 1.5em;
+    }
+    .post{
+      border-left: 5px solid #629584;
+    }
+    .xtitle{
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 24px;
+        margin-top: 15px;
+        font-weight: 400;
+        color: #387478;
+    }
+
+    .posts .teaser{
+      align:center;
+      width: 100%;
+/*      height: 20%;*/
+      overflow: hidden;
+/*        width: 200px;*/
+/*        height: 350px;*/
+        height: 50%;
+        float: left;
+        margin: 0 0 0 10px;
+    }
+
+    .posts .teaser-left{
+    margin: 0 auto;
+    max-width:300px;
+    max-height:150px;
+    display: block;
+    width: auto;
+    height: auto;
+    }
+
+    .teaser-container{
+    float: left;
+    width: 300px;
+    height: 180px;
+
+    margin-right: 20px;
+    margin-left: 20px;
+    }
+
+    .post-hidden{
+      display: none;
+    }
+
+    a{
+      color: #387478;
+      position: relative;
+    }
+
+    .user-info a{
+      color: #333;
+    }
+    .user-info a:after{
+      content: '';
+      position: absolute;
+      top: 60%;
+      left: -0.1em;
+      right: -0.1em;
+      bottom: 0;
+      transition:top 200ms cubic-bezier(0, 0.8, 0.13, 1);
+      /*background-color: rgba(225, 166, 121, 0.5);*/
+      background-color: rgba(255,211,30, 0.5);
+    }
+
+    .authors-entry a {
+      color: #666
+    }
+
+    .emojilink:after{
+      background-color: rgba(255,211,30, 0.0)
+      /*rgba(225, 166, 121, 0.0);*/
+    }
+    a:hover{
+      color:rgb(255, 180, 240);
+    }
+    a:hover:after{
+      color:rgb(255, 180, 240);
+      /*color: #111;*/
+      top:0%;
+    }
+    .xcode a:after{
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transition:top 200ms cubic-bezier(0, 0.8, 0.13, 1);
+      /*background-color: rgba(225, 166, 121, 0.5);*/
+      background-color: #fff;
+    }
+    .xcode a:hover:after{
+      color: #fff;
+      /*color: #111;*/
+    }
+    .entry{
+        position: relative;
+        top:0;
+        left: 20px;
+        margin-top: 5px;
+    }
+
+    .posts > .post{
+        border-bottom: 0;
+        padding-bottom:0em;
+        padding-top: 10px;
+        margin-bottom: 10px;
+    }
+    .papertitle{
+        margin-top: 0px;
+        font-weight: 600;
+        font-size:18px;
+        font-style: italic;
+        /*font-style: italic;*/
+        /*height: 2.6em*/
+    }
+
+</style>
+
+<script src="js/jquery.min.js"></script>
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async="" defer="" src="js/buttons.js"></script>
+
+<script type="text/javascript">
+
+$(function(){
+    $('#vis_teaser').on('click', function(){
+        $('.unimportant').toggleClass('post-hidden')
+   });
+});
+</script>
+
+<div class="user-info">
+
+<img style="width: 120px;float: left;" src="avatar_2.png" alt="">
+
+<div style="position: relative; left:40px; top:10px">
+
+
+<div style="font-size:24px;font-weight: 400">Son Nguyen</div>
+<div>Undergraduate Student | Graduate Teaching Assistant</div>
+<div>University of Science, Vietnam National University, Hanoi, Vietnam</div>
+
+Email (work.ngmson2706@gmail.com)  
+                                   / <a target="_blank" href="https://github.com/ngmsonn">Github</a> 
+                                   / <a target="_blank" href="https://orcid.org/0009-0001-2732-9709">ORCID</a> 
+                                   / <a target="_blank" href="https://www.youtube.com/@ngmson_ai">Youtube</a>
+                                   / <a target="_blank" href="pdf/resume.pdf">CV</a>
+
+</div>
+</div>
+<br>
+
+<!-- a: In màu nhạt
+     b: In màu đậm -->
+
+<div style="text-align: justify;clear: both;">
+  I am currently a fourth-year student at the <a>University of Science</a>, <a>Vietnam National University</a>. 
+  I serve as the research team leader at the <a>Artificial Intelligence Laboratory - Analytical Chemistry</a> under the supervision of 
+  <a href="https://scholar.google.com.vn/citations?user=zlpWLQQAAAAJ&hl=vi">Associate Professor Dr. Ta Thi Thao</a>. 
+  Additionally, I am a student at the <a>Products Chemistry Laboratory</a>, guided by 
+  <a href="https://scholar.google.com/citations?user=_ZVvtu0AAAAJ&hl=en">Associate Professor Dr. Phan Minh Giang</a>. 
+  Previously, in 2022 and 2023, I was a member of the <a>Computational Chemistry Laboratory</a> 
+  and the <a>Biochemistry Laboratory</a> at the <a>Institute of Natural Products Chemistry, Vietnam Academy of Science and Technology</a>.
+  My main research interests include Artificial Intelligence for Science, Graph Machine Learning, Optimization, with Drug Discovery and Development.
+
+</div>
+
+<div style="text-align: justify;clear: both;">
+
+</div>
+
+<hr>
+
+
+<div id="News" class="xtitle">News</div>
+<ul class="news" style="line-height: 2em; overflow-y:auto; height: 200px">
+
+<li>1 abstract is accepted by <b>Applied Science and Engineering (2025)</b>. <div style="float: right;">2024.11 </div> </li>
+<li> We won the 1st place in <b>International Food Control Conferencce (2024)</b>. <div style="float: right;">2024.10 </div> </li>
+<li> We won the 4th place in <b>International Food Control Conferencce (2024)</b>. <div style="float: right;">2024.10 </div> </li>
+<li>2 papers are accepted by  <b>Vietnam Journal of Food Control</b>.             <div style="float: right;">2024.10 </div> </li>
+<li>3 papers are accepted by  <b>Vietnam Journal of Food Control</b>.             <div style="float: right;">2024.10 </div> </li>
+<li>1 paper is accepted by <b>Journal of Analytical Sciences</b>. <div style="float: right;">2024.09 </div> </li>
+<li>I won the 3rd place in the <b>Student Science Research Award (2024) </b> at the <a>School level</a>. <div style="float: right;">2024.04</div></li>
+<li>I won the 2nd place in the <b>Student Science Research Award (2024) </b> at the <a>Department level</a>. <div style="float: right;">2024.04</div></li>
+
+
+</ul>
+
+<hr>
+
+
+<div id="Activities" class="xtitle"> Education</div>
+<ul class="news" style="line-height: 2em">
+<li>Bachelor, Vietnam National University - Hanoi University of Science, Chemistry. <div style="float: right;">2021 - 2025 </div></li>
+<li>Samsung Innovational Campus - National Innovation Center, Artificial Intelligence. <div style="float: right;">2023 - 2024 </div></li>
+
+</ul>
+
+<hr>
+
+<div id="Activities" class="xtitle"> Teaching Assistant</div>
+<ul class="news" style="line-height: 2em">
+<li>[Graduate] CH34 - Statistics and Applied Mathematics for Chemistry. <div style="float: right;">2024 </div></li>
+<li>[Graduate] CH33 - Statistics and Applied Mathematics for Chemistry. <div style="float: right;">2023 </div></li>
+<li>[Undergraduate] - CHE2129 – Advanced Analytical Chemistry. <div style="float: right;"> 2024 </div></li>
+
+</ul>
+
+<hr>
+
+
+<div id="Publications" class="xtitle"> Research Highlight </div>
+<div class="posts">
+
+    
+    <article class="post">
+
+
+      <div class="teaser-container">
+        <img class="teaser-left" src="">
+      </div>
+
+      <div class="papertitle entry">MLOJ: Machine Learning Project for Orange Juice Discrimination and Classification Based on Spectral Data.</div>
+
+      <div class="entry authors-entry">
+         <b>Nguyen Manh Son 🧑‍💻</b>, Nguyen Duc Phong, Nguyen Manh Ha, Bui Xuan Thanh, Nguyen Duc Thanh, Ta Thi Thao
+      </div>
+
+
+      <div class="entry user-info">
+
+
+        <a class="links" target="_blank" href="" rel="paperurl">Paper</a>
+    
+        /
+        <a class="links" target="_blank" href="https://github.com/ngmsonn/ML_OrangeJuice/tree/main" rel="paperurl">Project Page</a>
+
+
+        </div>
+      <div style="clear:both"></div>
+      <!-- <a href="/academic/publication/SadTalker" class="read-more">Read More</a> -->
+    </article>
+
+  </ul>
+<hr>
+
+
+
+<div id="Publications" class="xtitle"> Selected Publications <a style="font-size: 14px; font-family: Helvetica, Arial, sans-serif;" href="">[Full Publications] </a> <span style="color:#333;font-size: 14px; font-family: Helvetica, Arial, sans-serif; "> (🧑‍💻 Co-first Author, 📮 Corresponding Author) </span>
+
+</div>
+<div class="posts">
+   
+        
+      <article class="post">
+        
+
+      <div class="teaser-container">
+        <img class="teaser-left" src="images/publications/vjfc_1c.png">
+      </div>
+
+      <div class="papertitle entry">Applications of machine learning coupled with computer vision, electronic nose and untargeted analysis for food
+        quality control</div>
+
+      <div class="entry authors-entry">
+        <b>Nguyen Manh Son 🧑‍💻</b>, Nguyen Duc Phong, Bui Xuan Thanh, Ta Thi Thao, Le Thi Hong Hao, Nguyen Duc Thanh
+      </div>
+
+      <div class="entry">
+          <i>Vietnam Journal of Food Control (<b>VJFC</b>)</i>, <i>2024</i>
+          
+      </div>
+
+      <div class="entry user-info">
+
+        
+        <a class="links" target="_blank" href="https://vjfc.nifc.gov.vn/ajax/research/getfile?filecode=a80c6a9d-26e0-46b4-a111-38112832d736" rel="paperurl">Paper</a>
+                
+        <!-- /
+        <a target="_blank" href="">Link</a>
+         -->
+
+
+        </div>
+      <div style="clear:both"></div>
+      <!-- <a href="/academic/publication/MOFAVIDEO" class="read-more">Read More</a> -->
+    </article>
+  
+    <article class="post">
+        
+
+      <div class="teaser-container">
+        <img class="teaser-left" src="images/publications/vjfc_2c.png">
+      </div>
+
+      <div class="papertitle entry">Machine learning and deep learning models applied to identification and classification of mango</div>
+
+      <div class="entry authors-entry">
+        Nguyen Duc Phong, <b>Nguyen Manh Son 🧑‍💻</b>, Nguyen Manh Ha, Bui Xuan Thanh, Ta Thi Thao, Nguyen Thi Van Anh, Le Thi Hong Hao, Nguyen Duc Thanh
+      </div>
+
+      <div class="entry">
+          <i>Vietnam Journal of Food Control (<b>VJFC</b>)</i>, <i>2024</i>
+          
+      </div>
+
+      <div class="entry user-info">
+
+        
+        <a class="links" target="_blank" href="https://vjfc.nifc.gov.vn/ajax/research/getfile?filecode=b80f6e16-73f0-43d2-ba4f-41edc4044801" rel="paperurl">Paper</a>
+                
+        <!-- /
+        <a target="_blank" href="">Link</a>
+         -->
+
+
+        </div>
+      <div style="clear:both"></div>
+      <!-- <a href="/academic/publication/MOFAVIDEO" class="read-more">Read More</a> -->
+    </article>
+
+    <article class="post">
+        
+
+      <div class="teaser-container">
+        <img class="teaser-left" src="images/publications/tclhs_1t.png">
+      </div>
+
+      <div class="papertitle entry">Multivariate regression models based on UV full spectra for the simultaneous determination of tetracycline, penicillin G, and cephalexin in different dosage forms</div>
+
+      <div class="entry authors-entry">
+        Nguyen Duc Phong, <b>Nguyen Manh Son 🧑‍💻</b>, Nguyen Dieu Linh, Nguyen Thi Minh Loi, Bui Xuan Thanh, Pham Gia Bach, Le Si Hung, Ta Thi Thao
+      </div>
+
+      <div class="entry">
+          <i>Journal of Analytical Sciences</i>, <i>2024</i>
+          
+      </div>
+
+      <div class="entry user-info">
+
+        
+        <a class="links" target="_blank" href="https://vjol.info.vn/index.php/TCPTHLS/article/view/101955/85963" rel="paperurl">Paper</a>
+                
+        <!-- /
+        <a target="_blank" href="">Link</a>
+         -->
+
+
+        </div>
+      <div style="clear:both"></div>
+      <!-- <a href="/academic/publication/MOFAVIDEO" class="read-more">Read More</a> -->
+    </article>
+
+</div>
+
+</ul>
+<hr>
+
+<!-- <div id="Misc" class="xtitle">Talks</div>
+<ul style="line-height: 2em; margin-top:0px">
+<li> 2023.9.30. Applications of AIGC, Kwai (Kuaishou) Technology. Hosted by Dr. <a href="https://www.xtao.website/"> Xin Tao</a>. </li>
+<li> 2023.6.30. AIGC related Applications, HIT SZ. Hosted by <a href="https://sunbowliu.github.io/">Prof. Xuebo Liu</a>.  </li>
+<li> 2023.6.16. <a href="https://www.fst.um.edu.mo/event/unlocking-the-ability-of-large-text-to-image-model-new-applications-and-new-opportunities/">Unlocking the ability of large text-to-image model: new applications and new opportunities</a>, University of Macau. Hosted by <a href="https://www.cis.um.edu.mo/~cmpun/">Prof. Chi-Man Pun</a>. </li>
+</ul>
+
+<div id="Academic Services" class="xtitle"> Previous Interns <span style="color:#333;font-size: 14px; font-family: Helvetica, Arial, sans-serif; "> ( * indicate their first top-tier paper through cooperation ) </span> </div>
+<ul style="line-height: 2em;  margin-top:0px">
+<li> <a href="https://zhendongwang6.github.io/">Zhendong Wang*</a> (2020/21), HIT(SZ). Co-Supervised w/ <a href="https://people.ucas.ac.cn/~jzliu?language=en">Prof. Jianzhuang Liu</a> @ Huawei Noah's Ark Lab  (<b>CVPR 2022</b>) </li>
+<li> Jingtang Liang* (2021.03 - 2021.09), Master@University Macau.  (<b>ECCV 2022</b>) </li>
+<li> Kun Chen* (2021.10 - 2022.06), Master@Xidian University ➡️ Ph.D@Xidian University. (<b>SIGGRAPH Asia 2022</b>) </li>
+<li> Wenxuan Zhang* (2021.12 - 2022.12), Master@XJTU ➡️ Ph.D@XJTU. (<b>CVPR 2023</b>)</li>
+<li> <a href="https://cxh.netlify.app/">Xuhang Chen*</a> (2021.10 - 2022.10), Ph.D@University of Macau (<b>ICASSP 2023</b>, <b>ICCV 2023</b>) </li>
+<li> Yihao Zhi* (2022.08 - 2023.03), Master@Shanghai Tech University ➡️ Ph.D@CUHK-SZ (<b>ICCV 2023</b>) </li>
+<li> <a href="https://chenyangqiqi.github.io/">Chenyang Qi</a> (2022.12 - 2023.05), Ph.D@HKUST (<b>ICCV 2023 Oral</b>) </li>
+<li> <a href="https://vvictoryuki.github.io/website/">Jiwen Yu</a> (2023.04 - 2024.01), Master@Peking University ➡️ Ph.D@HKU (<b>ECCV 2024 Submission</b>) </li>
+<li> <a href="https://scholar.google.com/citations?user=WWb7Y7AAAAAJ&amp;hl=zh-CN&amp;oi=sra">Yaofang Liu*</a> (2023.07 - 2024.01), Ph.D@City University of Hong Kong (<b>CVPR 2024</b>)</li>
+<li> <a href="https://myniuuu.github.io/">Muyao Niu</a> (2023.12 - 2024.06), Master@Tokyo University (<b>ECCV 2024</b>) </li>
+<li> Yudian Zheng* (2023.07 - Now), Master@Saarland University ➡️ Ph.D@University of Macau (<b>Eurographics 2024</b>) </li>
+<li> <a href="https://scholar.google.com/citations?user=As9gQZ0AAAAJ&amp;hl=zh-CN">Weihuang Liu*</a> (2021.12 - Now), Ph.D@University of Macau. (<b>AAAI 2023 Oral, CVPR 2023, CVPR 2024, PR 2024</b>)</li>
+
+</ul>
+<hr> -->
+
+
+<div id="Misc" class="xtitle"> Somethings !!!</div>
+<ul style="list-style: none;line-height: 2em;padding-left: 0; margin-top:0px">
+<li>❤️ Nguyen Ha is my princess 💍. </li>
+</ul>
+    </div>
+<!--     <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+        </footer>
+      </div>
+    </div>
+ -->
+    
+
+  
+
+
+
+</body></html>

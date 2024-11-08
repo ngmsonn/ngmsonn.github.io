@@ -1,0 +1,2544 @@
+<!DOCTYPE html><html><head>
+  <title>Son Nguyen – NgmSonn</title>
+  <link rel="icon" type="image/x-icon" href="icon.ico">
+
+      <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  
+  <meta name="description" content="Researcher in Computer Science - AI">
+  <meta property="og:description" content="Researcher in Computer Science - AI">
+  
+  <meta name="author" content="Son Nguyen">
+
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  
+</head>
+
+<body>
+
+
+  <div id="main" role="main" class="container" style="margin-top: 20px;">
+    <style type="text/css">
+  .container{
+    max-width: 900px !important;
+  }
+  body{
+      font-family: Optima, "Times New Roman", Times, serif;
+      font-weight: 200;
+      font-size: 18px;
+      /*background-color: rgb(43, 60, 197);*/
+      /*color: rgb(0, 79, 241);*/
+      /*color: white;*/
+      border-top:5px solid #387478;
+      border-bottom:5px solid #387478;
+  }
+  b{
+    color: #629584;
+  }
+  .posts{
+      /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+      font-size: 14px;
+
+  }
+  .news{
+    margin-top: 0;
+    line-height: 1.5em;
+  }
+  .post{
+    border-left: 5px solid #6059f5aa;
+  }
+  .xtitle{
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 24px;
+      margin-top: 15px;
+      font-weight: 400;
+      color: #629584;
+  }
+
+  .posts .teaser{
+    align:center;
+    width: 100%;
+/*      height: 20%;*/
+    overflow: hidden;
+/*        width: 200px;*/
+/*        height: 350px;*/
+      height: 50%;
+      float: left;
+      margin: 0 0 0 10px;
+  }
+
+  .posts .teaser-left{
+  margin: 0 auto;
+  max-width:300px;
+  max-height:150px;
+  display: block;
+  width: auto;
+  height: auto;
+  }
+
+  .teaser-container{
+  float: left;
+  width: 300px;
+  height: 180px;
+
+  margin-right: 20px;
+  margin-left: 20px;
+  }
+
+  .post-hidden{
+    display: none;
+  }
+
+  a{
+    color: #629584;
+    position: relative;
+  }
+
+  .user-info a{
+    color: #333;
+  }
+  .user-info a:after{
+    content: '';
+    position: absolute;
+    top: 60%;
+    left: -0.1em;
+    right: -0.1em;
+    bottom: 0;
+    transition:top 200ms cubic-bezier(0, 0.8, 0.13, 1);
+    /*background-color: rgba(225, 166, 121, 0.5);*/
+    background-color: rgba(255,211,30, 0.5);
+  }
+
+  .authors-entry a {
+    color: #666
+  }
+
+  .emojilink:after{
+    background-color: rgba(255,211,30, 0.0)
+    /*rgba(225, 166, 121, 0.0);*/
+  }
+  a:hover{
+    color:rgb(255, 180, 240);
+  }
+  a:hover:after{
+    color:rgb(255, 180, 240);
+    /*color: #111;*/
+    top:0%;
+  }
+  .xcode a:after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition:top 200ms cubic-bezier(0, 0.8, 0.13, 1);
+    /*background-color: rgba(225, 166, 121, 0.5);*/
+    background-color: #fff;
+  }
+  .xcode a:hover:after{
+    color: #fff;
+    /*color: #111;*/
+  }
+  .entry{
+      position: relative;
+      top:0;
+      left: 20px;
+      margin-top: 5px;
+  }
+
+  .posts > .post{
+      border-bottom: 0;
+      padding-bottom:0em;
+      padding-top: 10px;
+      margin-bottom: 10px;
+  }
+  .papertitle{
+      margin-top: 0px;
+      font-weight: 600;
+      font-size:16px;
+      font-style: italic;
+      /*font-style: italic;*/
+      /*height: 2.6em*/
+  }
+
+</style>
+
+<script src="js/jquery.min.js"></script>
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async="" defer="" src="js/buttons.js"></script>
+
+<script type="text/javascript">
+
+$(function(){
+  $('#vis_teaser').on('click', function(){
+      $('.unimportant').toggleClass('post-hidden')
+ });
+});
+</script>
+
+<div class="user-info">
+
+<!-- <img style="width: 120px;float: left;" src="avatar.jpg" alt=""> -->
+<img style="width: 120px;float: left;" src="avatar_2.png" alt="">
+
+<div style="position: relative; left:40px; top:10px">
+<!-- <div style="float:right; padding-right:50px"><img src="images/greatbay.png"/></div> -->
+<div style="font-size:24px;font-weight: 400">Son Nguyen</div>
+<div>Undergraduate Student | Graduate Teaching Assistant</div>
+<div>University of Science, Vietnam National University, Hanoi, Vietnam</div>
+<!-- <div>Address: No. 16, University Road, Songshan Lake, Dongguan, Guangdong, China</div> -->
+Email (work.ngmson2706@gmail.com)  
+                                 / <a target="_blank" href="https://github.com/ngmsonn">Github</a> 
+                                 / <a target="_blank" href="https://orcid.org/0009-0001-2732-9709">ORCID</a> 
+                                 / <a target="_blank" href="https://www.youtube.com/@ngmson_ai">Youtube</a>
+                                 / <a target="_blank" href="pdf/resume.pdf">CV</a>
+
+
+</div>
+</div>
+<br>
+
+
+<div style="text-align: justify;clear: both;">
+    I am currently a tenure-track assistant professor in the <a href="https://www.gbu.edu.cn/menu/177">SCIT(Computer Science) </a>, <a href="https://www.gbu.edu.cn/" target="_blank">Great Bay University</a> since 2024.09.
+    I received my M.S and Ph.D. degrees from the <a href="https://www.cis.um.edu.mo/">Department of Computer and Information Science, FST</a>, <a target="_blank" href="http://um.edu.mo/">University of Macau</a>, under the supervision of Prof. <a target="_blank" href="http://www.cis.umac.mo/~cmpun/">Chi-Man Pun</a> in 2018 and 2021 respectively. I received my B.Sc degree in Computer Science from <a target="_blank" href="https://en.xidian.edu.cn/">Xidian University</a>.
+    My main research interests include Visual Computing, Computational Photography, with the intersection of Computer Vision and Graphics.
+
+</div>
+<div style="text-align: justify;clear: both;">
+
+</div>
+
+<hr>
+<!-- <img style="width: 37%;text-align:center;display:inline-block;float:right" src="images/gvc_logo.png"> -->
+<span>I am building <a href="http://gvclab.github.io"> Geneartive &amp; intelligent Visual Computing Lab (GVC Lab)</a>, a new research lab at <a href="https://www.gbu.edu.cn/">Great Bay University</a>. Our lab studies Visual Computing,
+with the goal of building intelligent machines that for creators and ordinary users.
+</span> <br> Several positions are <a href="http://gvclab.github.io/opening/">available 🔥 🔥</a>, please drop me an Email if you are interested. 
+<hr>
+
+<div id="News" class="xtitle">News</div>
+<ul class="news" style="line-height: 2em; overflow-y:auto; height: 200px">
+<li> We won the 1st place in <a href="images/OSR_1st.pdf">OOD-CV: SSB Challenge 2024 (Open-Set Recognition Track)</a> at ECCV 24 Workshop.  <div style="float: right;">2024.09 </div> </li>
+<li> I officially leave Tencent (24/09/20) and join GBU (24/09/23) 🎉🎉. <div style="float: right;">2024.09 </div> </li>
+<li> <a href="https://github.com/AILab-CVC/CV-VAE">CV-VAE</a> is accepted by  <b>NeurIPS 2024</b>. <div style="float: right;">2024.09 </div> </li>
+<li>3 papers are accepted by  <b>ECCV 2024</b> and 1 paper is acceped by <b>Pattern Recognition</b>. <div style="float: right;">2024.07 </div> </li>
+<li>6 papers are accepted by  <b>CVPR 2024</b>. (🌟 <a href="https://github.com/TencentARC/SmartEdit">SmartEdit</a> has been selected as highlight paper.) <div style="float: right;">2024.02 </div> </li>
+<li>3 papers are accepted by  <b>AAAI 2024</b>, <b>ICLR 2024 (Spotlight)</b> and <b>Eurographics 2024</b>, respectively. <div style="float: right;">2023.12 </div> </li>
+<li>1 paper is accepted by <b>NeurIPS 2023</b>. <div style="float: right;">2023.09 </div> </li>
+<li>1 paper is conditionally accepted by <b>SIGGRAPH Asia 2023</b> (Conference Track). <div style="float: right;">2023.08 </div> </li>
+<li>4 papers (4/5) are accepted by <b>ICCV-23</b>. (🌟 <a href="https://fate-zero-edit.github.io/">FateZero</a> has been selected as Oral paper.) <div style="float: right;">2023.07 </div> </li>
+<li>6 papers (6/7) are accepted by <b>CVPR-23</b>. <div style="float: right;">2023.02 </div> </li>
+</ul>
+
+<div id="Activities" class="xtitle"> Education and Work Experience </div>
+<ul class="news" style="line-height: 2em">
+<li>Assistant Professor, School of Computing and Information Technology, <i>Great Bay University</i> <div style="float: right;">2024.9 - </div></li>
+<li>Senior Researcher, Visual Computing Center, <i>Tencent AI Lab</i>, lead by Dr. <a href="https://juewang725.github.io/">Jue Wang</a>, Dr. <a href="https://scholar.google.com/citations?user=4oXBp9UAAAAJ&amp;hl=zh-CN">Ying Shan</a>. <div style="float: right;">2021.9 - 2024.9 </div></li>
+<li style="color:#999">Researcher (Intern), <i>Huawei Noah's Ark Lab</i>, work with Prof. <a href="https://scholar.google.com/citations?user=sKauaAwAAAAJ&amp;hl=zh-CN">Jianzhuang Liu</a>. <div style="float: right;">2020.3-11 </div></li>
+<li style="color:#999">Asian University Machine Learning Camp, <i>Jeju National University</i>. <div style="float: right;">2018.9</div></li>
+<li style="color:#999">Algorithm Engineer (Intern), <i>HIKVision Research Institute</i>. <div style="float: right;"><div style="float: right;">2018.5-7 </div> </div></li>
+<li style="color:#999">FrondEnd Engineer (Intern), <i>Alibaba Group</i>. <div style="float: right;">2014.7-9 </div></li>
+<li>Master &amp; Ph.D, University of Macau, Computer Science. Supervisor: Prof. <a href="https://www.cis.um.edu.mo/~cmpun/">Chi-Man Pun</a>. <div style="float: right;">2015.8 - 2021.9 </div>  </li>
+<li>Bachelor, Xidian University, Computer Science. <div style="float: right;">2011.8 - 2015.7 </div></li>
+
+</ul>
+<img height="63px" src="../../vinthony.github.io/academic/images/xidian_logo.png"> �&nbsp;�&nbsp;�&nbsp;�&nbsp; <img src="../../vinthony.github.io/academic/images/um_logo.png" height="63px"> �&nbsp;�&nbsp;�&nbsp;�&nbsp;
+<img src="../../vinthony.github.io/academic/images/ai-lab.jpg" height="63px">�&nbsp;�&nbsp;�&nbsp;�&nbsp; <img src="../../vinthony.github.io/academic/images/huawei_noah.jpeg" height="63px">
+
+
+<div id="Publications" class="xtitle"> Research Highlight </div>
+<div class="posts">
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+  <article class="post">
+
+    <!-- <div style="position: relative; left:-50px; font-size: 18px;">2023</div> -->
+
+    <!-- <div style="text-align:center;"><img class="teaser-img" src="./images/sadtalker.gif"> </div> -->
+
+    <div class="teaser-container">
+      <img class="teaser-left" src="../../vinthony.github.io/academic/images/sadtalker.gif">
+    </div>
+
+    <div class="papertitle entry">SadTalker: Learning Realistic 3D Motion Coefficients for Stylized Audio-Driven Single Image Talking Face Animation</div>
+
+    <div class="entry authors-entry">
+      Wenxuan Zhang 🧑‍💻, <b>Xiaodong Cun 🧑‍💻</b>, <a href="https://scholar.google.com.tw/citations?user=h-3xd3EAAAAJ&amp;hl=zh-TW">Xuan Wang</a>, <a href="https://yzhang2016.github.io/yongnorriszhang.github.io/">Yong Zhang</a>,  <a href="https://xishen0220.github.io/">Xi Shen</a>, Yu Guo, Ying Shan, Fei Wang
+    </div>
+
+    <div class="entry">
+        <i>Computer Vision and Pattern Recognition (<b>CVPR</b>)</i>, <i>2023</i>
+        
+    </div>
+
+    <div class="entry user-info">
+
+      
+      <a class="links" target="_blank" href="https://arxiv.org/abs/2211.12194" rel="paperurl">arXiv</a>
+      
+
+      
+      /
+      <a class="links" target="_blank" href="https://colab.research.google.com/github/Winfredy/SadTalker/blob/main/quick_demo.ipynb" rel="paperurl">Online Demo</a>
+      
+
+      
+      /
+      <a class="links" target="_blank" href="https://sadtalker.github.io/" rel="paperurl">Project Page</a>
+      
+
+      
+      /
+      <a target="_blank" href="https://github.com/Winfredy/SadTalker">Github</a>
+      
+
+      
+      <div style="display: inline-block;float:right" class="xcode">
+      <!-- <a class="github-button" href="https://github.com/Winfredy/SadTalker" data-show-count="true">Star</a>  -->
+        <a href="https://github.com/Winfredy/SadTalker"><img src="https://img.shields.io/github/stars/Winfredy/SadTalker?style=social"></a>
+      </div>
+      
+
+      <br>
+      <i style="display:inline-block;margin-top: 5px"><b style="color:red">Top 10 you won't miss paper of CVPR 2023 (<a href="https://medium.com/voxel51/cvpr-2023-survival-guide-504e965e1f8b">voxel51.com</a>).</b> <br> <b style="color:red"> Top 10 Most Github Star CVPR paper (<a href="https://github.com/search?q=CVPR&amp;type=repositories&amp;s=stars&amp;o=desc">github.com</a>).</b></i>
+
+      </div>
+    <div style="clear:both"></div>
+    <!-- <a href="/academic/publication/SadTalker" class="read-more">Read More</a> -->
+  </article>
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+  <article class="post">
+
+    <!-- <div style="position: relative; left:-50px; font-size: 18px;">2022</div> -->
+
+    <!-- <div style="text-align:center;"><img class="teaser-img" src="./images/video-retalking.gif"> </div> -->
+
+    <div class="teaser-container">
+      <img class="teaser-left" src="../../vinthony.github.io/academic/images/video-retalking.gif">
+    </div>
+
+    <div class="papertitle entry">VideoReTalking: Audio-based Lip Synchronization for Talking Head Video Editing In the Wild</div>
+
+    <div class="entry authors-entry">
+      Kun Cheng 🧑‍💻, <b>Xiaodong Cun 🧑‍💻📮</b>, <a href="https://yzhang2016.github.io/">Yong Zhang</a>, <a href="https://menghanxia.github.io/">Menghan Xia</a>, <a href="https://feiiyin.github.io/">Fei Yin</a>, <br> Mingrui Zhu, <a href="https://xuanwangvc.github.io/">Xuan Wang</a>,  <a href="https://juewang725.github.io/">Jue Wang</a>, Nannan Wang
+    </div>
+
+    <div class="entry">
+        <i><b>SIGGRAPH Asia</b> (Conference Track)</i>, <i>2022</i>
+        
+    </div>
+
+    <div class="entry user-info">
+
+      
+      <a class="links" target="_blank" href="https://arxiv.org/abs/2211.14758" rel="paperurl">arXiv</a>
+      
+
+      
+
+      
+      /
+      <a class="links" target="_blank" href="https://vinthony.github.io/video-retalking/" rel="paperurl">Project Page</a>
+      
+
+      
+      /
+      <a target="_blank" href="https://github.com/vinthony/video-retalking">Github</a>
+      
+
+      
+      <div style="display: inline-block;float:right" class="xcode">
+      <!-- <a class="github-button" href="https://github.com/vinthony/video-retalking" data-show-count="true">Star</a>  -->
+        <a href="https://github.com/vinthony/video-retalking"><img src="https://img.shields.io/github/stars/vinthony/video-retalking?style=social"></a>
+      </div>
+      
+
+      <br>
+      <i style="display:inline-block;margin-top: 5px"><b style="color:red"> Top 10 Most Github Star SIGGRAPH paper (<a href="https://github.com/search?q=SIGGRAPH&amp;type=repositories&amp;s=stars&amp;o=desc">github.com</a>).</b></i>
+
+      </div>
+    <div style="clear:both"></div>
+    <!-- <a href="/academic/publication/VideoReTalking" class="read-more">Read More</a> -->
+  </article>
+  
+
+
+  
+
+
+  
+  <article class="post">
+
+    <!-- <div style="position: relative; left:-50px; font-size: 18px;">2024</div> -->
+
+    <!-- <div style="text-align:center;"><img class="teaser-img" src="./images/videocrafter.gif"> </div> -->
+
+    <div class="teaser-container">
+      <img class="teaser-left" src="../../vinthony.github.io/academic/images/videocrafter.gif">
+    </div>
+
+    <div class="papertitle entry">VideoCrafter1 &amp; VideoCrafter2</div>
+
+    <div class="entry authors-entry">
+      <a href="https://scholar.google.com/citations?user=6UPJSvwAAAAJ&amp;hl=zh-CN">Haoxin Chen 🧑‍💻</a>, Menghan Xia 🧑‍💻, <a href="https://yzhang2016.github.io/">Yong Zhang 🧑‍💻</a>,  <b>Xiaodong Cun🧑‍💻</b>,<a href="https://xinntao.github.io/">Xintao Wang</a>, <a href="https://scholar.google.com/citations?user=4oXBp9UAAAAJ&amp;hl=zh-CN" target="_blank">Ying Shan</a>
+    </div>
+
+    <div class="entry">
+        <i>Computer Vision and Pattern Recognition (<b>CVPR</b>) &amp; Technical report</i>, <i>2024</i>
+        
+    </div>
+
+    <div class="entry user-info">
+
+      
+      <a class="links" target="_blank" href="https://arxiv.org/abs/2310.19512" rel="paperurl">arXiv</a>
+      
+
+      
+
+      
+      /
+      <a class="links" target="_blank" href="https://ailab-cvc.github.io/videocrafter2/" rel="paperurl">Project Page</a>
+      
+
+      
+      /
+      <a target="_blank" href="https://github.com/AILab-CVC/VideoCrafter">Github</a>
+      
+
+      
+      <div style="display: inline-block;float:right" class="xcode">
+      <!-- <a class="github-button" href="https://github.com/AILab-CVC/VideoCrafter" data-show-count="true">Star</a>  -->
+        <a href="https://github.com/AILab-CVC/VideoCrafter"><img src="https://img.shields.io/github/stars/AILab-CVC/VideoCrafter?style=social"></a>
+      </div>
+      
+
+      <br>
+      <i style="display:inline-block;margin-top: 5px"></i>
+
+      </div>
+    <div style="clear:both"></div>
+    <!-- <a href="/academic/publication/VideoCrafter" class="read-more">Read More</a> -->
+  </article>
+  
+
+
+  
+
+
+  
+  <article class="post">
+
+    <!-- <div style="position: relative; left:-50px; font-size: 18px;">2023</div> -->
+
+    <!-- <div style="text-align:center;"><img class="teaser-img" src="./images/fatezero.gif"> </div> -->
+
+    <div class="teaser-container">
+      <img class="teaser-left" src="../../vinthony.github.io/academic/images/fatezero.gif">
+    </div>
+
+    <div class="papertitle entry">FateZero: Fusing Attentions for Zero-shot Text-based Video Editing</div>
+
+    <div class="entry authors-entry">
+      <a href="https://chenyangqiqi.github.io/">Chenyang Qi</a>, <b>Xiaodong Cun 📮</b>, <a href="https://yzhang2016.github.io">Yong Zhang</a>, <a href="https://chenyanglei.github.io/">Chenyang Lei</a>, <a href="https://xinntao.github.io/">Xintao Wang</a>, <a href="https://scholar.google.com/citations?hl=zh-CN&amp;user=4oXBp9UAAAAJ">Ying Shan</a>, <a href="https://cqf.io">Qifeng Chen 📮</a>
+    </div>
+
+    <div class="entry">
+        <i>International Conference on Computer Vision (<b>ICCV</b>)</i>, <i>2023</i>
+        
+    </div>
+
+    <div class="entry user-info">
+
+      
+      <a class="links" target="_blank" href="https://arxiv.org/abs/2303.09535" rel="paperurl">arXiv</a>
+      
+
+      
+
+      
+      /
+      <a class="links" target="_blank" href="https://fate-zero-edit.github.io/" rel="paperurl">Project Page</a>
+      
+
+      
+      /
+      <a target="_blank" href="https://github.com/ChenyangQiQi/FateZero">Github</a>
+      
+
+      
+      <div style="display: inline-block;float:right" class="xcode">
+      <!-- <a class="github-button" href="https://github.com/ChenyangQiQi/FateZero" data-show-count="true">Star</a>  -->
+        <a href="https://github.com/ChenyangQiQi/FateZero"><img src="https://img.shields.io/github/stars/ChenyangQiQi/FateZero?style=social"></a>
+      </div>
+      
+
+      <br>
+      <i style="display:inline-block;margin-top: 5px"><b style="color:red"> ICCV 23 Oral Presentation (2.3%) </b> <br>  <b style="color:red"> Top 15 most influence paper of ICCV 23 (<a href="https://www.paperdigest.org/2024/05/most-influential-iccv-papers-2024-05/">paperdigest.org</a>).</b></i>
+
+      </div>
+    <div style="clear:both"></div>
+    <!-- <a href="/academic/publication/fatezero" class="read-more">Read More</a> -->
+  </article>
+  
+
+
+  
+  <article class="post">
+
+    <!-- <div style="position: relative; left:-50px; font-size: 18px;">2022</div> -->
+
+    <!-- <div style="text-align:center;"><img class="teaser-img" src="./images/uformer.gif"> </div> -->
+
+    <div class="teaser-container">
+      <img class="teaser-left" src="../../vinthony.github.io/academic/images/uformer.gif">
+    </div>
+
+    <div class="papertitle entry">Uformer: A General U-Shaped Transformer for Image Restoration</div>
+
+    <div class="entry authors-entry">
+      <a href="https://zhendongwang6.github.io/">Zhendong Wang</a>, <b>Xiaodong Cun 📮</b>, <a href="https://jianminbao.github.io/">Jianmin Bao</a>, <a href="https://people.ucas.ac.cn/~jzliu?language=en">Jianzhuang Liu</a>, <a href="http://staff.ustc.edu.cn/~zhwg/">Wengang Zhou</a>, <a href="http://staff.ustc.edu.cn/~zhwg/">Houqiang Li</a>
+    </div>
+
+    <div class="entry">
+        <i>Computer Vision and Pattern Recognition (<b>CVPR</b>)</i>, <i>2022</i>
+        
+    </div>
+
+    <div class="entry user-info">
+
+      
+      <a class="links" target="_blank" href="https://arxiv.org/abs/2106.03106" rel="paperurl">arXiv</a>
+      
+
+      
+
+      
+
+      
+      /
+      <a target="_blank" href="https://github.com/ZhendongWang6/Uformer">Github</a>
+      
+
+      
+      <div style="display: inline-block;float:right" class="xcode">
+      <!-- <a class="github-button" href="https://github.com/ZhendongWang6/Uformer" data-show-count="true">Star</a>  -->
+        <a href="https://github.com/ZhendongWang6/Uformer"><img src="https://img.shields.io/github/stars/ZhendongWang6/Uformer?style=social"></a>
+      </div>
+      
+
+      <br>
+      <i style="display:inline-block;margin-top: 5px"><b style="color:red">Top 15 most influence paper of CVPR 2022 (<a href="https://www.paperdigest.org/2023/04/most-influential-cvpr-papers-2023-04/">paperdigest.org</a>).</b></i>
+
+      </div>
+    <div style="clear:both"></div>
+    <!-- <a href="/academic/publication/dbd" class="read-more">Read More</a> -->
+  </article>
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+  <article class="post">
+
+    <!-- <div style="position: relative; left:-50px; font-size: 18px;">2024</div> -->
+
+    <!-- <div style="text-align:center;"><img class="teaser-img" src="./images/fupose.gif"> </div> -->
+
+    <div class="teaser-container">
+      <img class="teaser-left" src="../../vinthony.github.io/academic/images/fupose.gif">
+    </div>
+
+    <div class="papertitle entry">Follow Your Pose: Pose-Guided Text-to-Video Generation using Pose-Free Videos</div>
+
+    <div class="entry authors-entry">
+      <a href="https://mayuelala.github.io/">Yue Ma 🧑‍💻</a>, <a href="https://github.com/YingqingHe">Yingqing He 🧑‍💻</a>, <b>Xiaodong Cun</b>, <a href="https://xinntao.github.io/">Xintao Wang</a>, <a href="https://scholar.google.com/citations?hl=zh-CN&amp;user=4oXBp9UAAAAJ">Ying Shan</a>, <a href="https://scholar.google.com/citations?user=Xrh1OIUAAAAJ&amp;hl=zh-CN"> Xiu Li </a>, <a href="https://cqf.io">Qifeng Chen</a>
+    </div>
+
+    <div class="entry">
+        <i>AAAI Conference on Artificial Intelligence (<b>AAAI </b>)</i>, <i>2024</i>
+        
+    </div>
+
+    <div class="entry user-info">
+
+      
+      <a class="links" target="_blank" href="https://arxiv.org/abs/2304.01186" rel="paperurl">arXiv</a>
+      
+
+      
+
+      
+      /
+      <a class="links" target="_blank" href="https://follow-your-pose.github.io/" rel="paperurl">Project Page</a>
+      
+
+      
+      /
+      <a target="_blank" href="https://github.com/mayuelala/FollowYourPose">Github</a>
+      
+
+      
+      <div style="display: inline-block;float:right" class="xcode">
+      <!-- <a class="github-button" href="https://github.com/mayuelala/FollowYourPose" data-show-count="true">Star</a>  -->
+        <a href="https://github.com/mayuelala/FollowYourPose"><img src="https://img.shields.io/github/stars/mayuelala/FollowYourPose?style=social"></a>
+      </div>
+      
+
+      <br>
+      <i style="display:inline-block;margin-top: 5px"></i>
+
+      </div>
+    <div style="clear:both"></div>
+    <!-- <a href="/academic/publication/fupose" class="read-more">Read More</a> -->
+  </article>
+  
+
+
+  
+
+
+  
+
+
+  
+
+</div>
+
+<div id="Publications" class="xtitle"> Selected Publications <a style="font-size: 14px; font-family: Helvetica, Arial, sans-serif;" href="https://scholar.google.com/citations?user=p42qwXcAAAAJ">[Full Publications] </a> <span style="color:#333;font-size: 14px; font-family: Helvetica, Arial, sans-serif; "> (🧑‍💻 Co-first Author, 📮 Corresponding Author) </span>
+<!-- <span style="color:#333;font-size: 14px; font-family: Helvetica, Arial, sans-serif; "> <a id="vis_teaser"> Click to Toggle All Publications 🔽 </a> </span>  -->
+
+</div>
+<div class="posts">
+
+
+  
+      
+        <article class="post">
+      
+  
+
+
+    <!-- <div style="position: relative; left:-50px; font-size: 18px;">2024</div> -->
+
+    <!-- <div style="text-align:center;"><img class="teaser-img" src="./images/mofavideo.gif"> </div> -->
+
+    <div class="teaser-container">
+      <img class="teaser-left" src="../../vinthony.github.io/academic/images/mofavideo.gif">
+    </div>
+
+    <div class="papertitle entry">MOFA-Video: Controllable Image Animation via Generative Motion Field Adaptions in Frozen Image-to-Video Diffusion Model</div>
+
+    <div class="entry authors-entry">
+      <a href="https://myniuuu.github.io/">Muyao Niu</a>,  <b>Xiaodong Cun 📮</b>, <a href="https://xinntao.github.io/">Xintao Wang</a>, <a href="https://yzhang2016.github.io/">Yong Zhang</a>, <a href="https://scholar.google.com/citations?user=4oXBp9UAAAAJ&amp;hl=zh-CN" target="_blank">Ying Shan</a>, <a href="https://scholar.google.com/citations?user=JD-5DKcAAAAJ&amp;hl=en">Yinqiang Zheng 📮</a>
+    </div>
+
+    <div class="entry">
+        <i>European Conference on Computer Vision (<b>ECCV</b>)</i>, <i>2024</i>
+        
+    </div>
+
+    <div class="entry user-info">
+
+      
+      <a class="links" target="_blank" href="https://arxiv.org/abs/2405.20222" rel="paperurl">arXiv</a>
+      
+
+      
+
+      
+
+      
+      /
+      <a class="links" target="_blank" href="https://myniuuu.github.io/MOFA_Video/" rel="paperurl">Project Page</a>
+      
+
+      
+      /
+      <a target="_blank" href="https://github.com/MyNiuuu/MOFA-Video">Github</a>
+      
+
+      
+      <div style="display: inline-block;float:right" class="xcode">
+      <a href="https://github.com/MyNiuuu/MOFA-Video"><img src="https://img.shields.io/github/stars/MyNiuuu/MOFA-Video?style=social"></a>
+      </div>
+      
+
+      </div>
+    <div style="clear:both"></div>
+    <!-- <a href="/academic/publication/MOFAVIDEO" class="read-more">Read More</a> -->
+  </article>
+
+
+  
+      
+        <article class="post">
+      
+  
+
+
+    <!-- <div style="position: relative; left:-50px; font-size: 18px;">2024</div> -->
+
+    <!-- <div style="text-align:center;"><img class="teaser-img" src="./images/evalcrafter.png"> </div> -->
+
+    <div class="teaser-container">
+      <img class="teaser-left" src="../../vinthony.github.io/academic/images/evalcrafter.png">
+    </div>
+
+    <div class="papertitle entry">EvalCrafter: Benchmarking and Evaluating Large Video Generation Models</div>
+
+    <div class="entry authors-entry">
+      Yaofang Liu🧑‍💻,  <b>Xiaodong Cun🧑‍💻</b>, <a href="https://sunbowliu.github.io/">Xuebo Liu</a>, <a href="https://xinntao.github.io/">Xintao Wang</a>, <a href="https://yzhang2016.github.io/">Yong Zhang</a>, <a href="https://scholar.google.com/citations?user=6UPJSvwAAAAJ&amp;hl=zh-CN">Haoxin Chen </a>, Yang Liu, <a href="https://www.math.cuhk.edu.hk/~zeng/" target="_blank">Tieyong Zeng</a>, <a href="https://scholars.cityu.edu.hk/en/persons/hon-fu-raymond-chan(98f1cf10-a01a-4642-8470-c48b0e977687).html" target="_blank">Raymond Chan</a>, <a href="https://scholar.google.com/citations?user=4oXBp9UAAAAJ&amp;hl=zh-CN" target="_blank">Ying Shan</a>
+    </div>
+
+    <div class="entry">
+        <i>Computer Vision and Pattern Recognition (<b>CVPR</b>)</i>, <i>2024</i>
+        
+    </div>
+
+    <div class="entry user-info">
+
+      
+      <a class="links" target="_blank" href="https://arxiv.org/abs/2310.11440" rel="paperurl">arXiv</a>
+      
+
+      
+
+      
+
+      
+      /
+      <a class="links" target="_blank" href="https://evalcrafter.github.io/" rel="paperurl">Project Page</a>
+      
+
+      
+      /
+      <a target="_blank" href="https://github.com/EvalCrafter/EvalCrafter">Github</a>
+      
+
+      
+      <div style="display: inline-block;float:right" class="xcode">
+      <a href="https://github.com/EvalCrafter/EvalCrafter"><img src="https://img.shields.io/github/stars/EvalCrafter/EvalCrafter?style=social"></a>
+      </div>
+      
+
+      </div>
+    <div style="clear:both"></div>
+    <!-- <a href="/academic/publication/EvalCrafter" class="read-more">Read More</a> -->
+  </article>
+
+
+  
+      
+        <article class="post">
+      
+  
+
+
+    <!-- <div style="position: relative; left:-50px; font-size: 18px;">2024</div> -->
+
+    <!-- <div style="text-align:center;"><img class="teaser-img" src="./images/xadapter.gif"> </div> -->
+
+    <div class="teaser-container">
+      <img class="teaser-left" src="../../vinthony.github.io/academic/images/xadapter.gif">
+    </div>
+
+    <div class="papertitle entry">X-Adapter: Adding Universal Compatibility of Plugins for Upgraded Diffusion Model</div>
+
+    <div class="entry authors-entry">
+      Lingmin Ran, <b>Xiaodong Cun</b>, Jia-Wei Liu, Rui Zhao, Song Zijie, <a href="https://xinntao.github.io/">Xintao Wang</a>, Jussi Keppo, <a href="https://sites.google.com/view/showlab">Mike Zheng Shou</a>
+    </div>
+
+    <div class="entry">
+        <i>Computer Vision and Pattern Recognition (<b>CVPR</b>)</i>, <i>2024</i>
+        
+    </div>
+
+    <div class="entry user-info">
+
+      
+      <a class="links" target="_blank" href="https://arxiv.org/abs/2312.02238" rel="paperurl">arXiv</a>
+      
+
+      
+
+      
+
+      
+      /
+      <a class="links" target="_blank" href="https://showlab.github.io/X-Adapter/" rel="paperurl">Project Page</a>
+      
+
+      
+      /
+      <a target="_blank" href="https://github.com/showlab/X-Adapter">Github</a>
+      
+
+      
+      <div style="display: inline-block;float:right" class="xcode">
+      <a href="https://github.com/showlab/X-Adapter"><img src="https://img.shields.io/github/stars/showlab/X-Adapter?style=social"></a>
+      </div>
+      
+
+      </div>
+    <div style="clear:both"></div>
+    <!-- <a href="/academic/publication/xadapter" class="read-more">Read More</a> -->
+  </article>
+
+
+  
+      
+        <article class="post">
+      
+  
+
+
+    <!-- <div style="position: relative; left:-50px; font-size: 18px;">2023</div> -->
+
+    <!-- <div style="text-align:center;"><img class="teaser-img" src="./images/magicstick.gif"> </div> -->
+
+    <div class="teaser-container">
+      <img class="teaser-left" src="../../vinthony.github.io/academic/images/magicstick.gif">
+    </div>
+
+    <div class="papertitle entry">MagicStick🪄: Controllable Video Editing via Control Handle Transformations</div>
+
+    <div class="entry authors-entry">
+      <a href="https://mayuelala.github.io/">Yue Ma</a>, <b>Xiaodong Cun 📮</b>, <a href="https://github.com/YingqingHe">Yingqing He</a>, <a href="https://chenyangqiqi.github.io/">Chenyang Qi</a>, <a href="https://xinntao.github.io/">Xintao Wang</a>, <a href="https://scholar.google.com/citations?hl=zh-CN&amp;user=4oXBp9UAAAAJ">Ying Shan</a>, <a href="https://scholar.google.com/citations?user=Xrh1OIUAAAAJ&amp;hl=zh-CN"> Xiu Li </a>, <a href="https://cqf.io">Qifeng Chen 📮</a>
+    </div>
+
+    <div class="entry">
+        <i>ArXiv</i>, <i>2023</i>
+        
+    </div>
+
+    <div class="entry user-info">
+
+      
+      <a class="links" target="_blank" href="https://arxiv.org/abs/2312.03047" rel="paperurl">arXiv</a>
+      
+
+      
+
+      
+
+      
+      /
+      <a class="links" target="_blank" href="https://magic-stick-edit.github.io/" rel="paperurl">Project Page</a>
+      
+
+      
+      /
+      <a target="_blank" href="https://github.com/mayuelala/MagicStick">Github</a>
+      
+
+      
+      <div style="display: inline-block;float:right" class="xcode">
+      <a href="https://github.com/mayuelala/MagicStick"><img src="https://img.shields.io/github/stars/mayuelala/MagicStick?style=social"></a>
+      </div>
+      
+
+      </div>
+    <div style="clear:both"></div>
+    <!-- <a href="/academic/publication/magicstick" class="read-more">Read More</a> -->
+  </article>
+
+
+  
+      
+        <article class="post">
+      
+  
+
+
+    <!-- <div style="position: relative; left:-50px; font-size: 18px;">2023</div> -->
+
+    <!-- <div style="text-align:center;"><img class="teaser-img" src="./images/animatezero.gif"> </div> -->
+
+    <div class="teaser-container">
+      <img class="teaser-left" src="../../vinthony.github.io/academic/images/animatezero.gif">
+    </div>
+
+    <div class="papertitle entry">AnimateZero: Video Diffusion Models are Zero-Shot Image Animators</div>
+
+    <div class="entry authors-entry">
+      Jiwen Yu, <b>Xiaodong Cun 📮</b>, Chenyang Qi, Yong Zhang,  <a href="https://xinntao.github.io/">Xintao Wang</a>, Ying Shan, Jian Zhang
+    </div>
+
+    <div class="entry">
+        <i>ArXiv</i>, <i>2023</i>
+        
+    </div>
+
+    <div class="entry user-info">
+
+      
+      <a class="links" target="_blank" href="https://arxiv.org/abs/2312.03793" rel="paperurl">arXiv</a>
+      
+
+      
+
+      
+
+      
+      /
+      <a class="links" target="_blank" href="https://vvictoryuki.github.io/animatezero.github.io/" rel="paperurl">Project Page</a>
+      
+
+      
+      /
+      <a target="_blank" href="https://github.com/vvictoryuki/AnimateZero">Github</a>
+      
+
+      
+      <div style="display: inline-block;float:right" class="xcode">
+      <a href="https://github.com/vvictoryuki/AnimateZero"><img src="https://img.shields.io/github/stars/vvictoryuki/AnimateZero?style=social"></a>
+      </div>
+      
+
+      </div>
+    <div style="clear:both"></div>
+    <!-- <a href="/academic/publication/AnimateZero" class="read-more">Read More</a> -->
+  </article>
+
+
+  
+      
+        <article class="post">
+      
+  
+
+
+    <!-- <div style="position: relative; left:-50px; font-size: 18px;">2024</div> -->
+
+    <!-- <div style="text-align:center;"><img class="teaser-img" src="./images/sketchvideo.gif"> </div> -->
+
+    <div class="teaser-container">
+      <img class="teaser-left" src="../../vinthony.github.io/academic/images/sketchvideo.gif">
+    </div>
+
+    <div class="papertitle entry">Sketch Video Synthesis</div>
+
+    <div class="entry authors-entry">
+      <a href="https://mayuelala.github.io/">Yudian Zheng</a>, <b>Xiaodong Cun 📮</b>,<a href="https://menghanxia.github.io/">Menghan Xia</a>, <a href="http://www.cis.umac.mo/~cmpun/">Chi-Man Pun</a>
+    </div>
+
+    <div class="entry">
+        <i><b>Eurographics</b></i>, <i>2024</i>
+        
+    </div>
+
+    <div class="entry user-info">
+
+      
+      <a class="links" target="_blank" href="https://arxiv.org/abs/2311.15306" rel="paperurl">arXiv</a>
+      
+
+      
+
+      
+
+      
+      /
+      <a class="links" target="_blank" href="https://sketchvideo.github.io/" rel="paperurl">Project Page</a>
+      
+
+      
+      /
+      <a target="_blank" href="https://github.com/yudianzheng/SketchVideo">Github</a>
+      
+
+      
+      <div style="display: inline-block;float:right" class="xcode">
+      <a href="https://github.com/yudianzheng/SketchVideo"><img src="https://img.shields.io/github/stars/yudianzheng/SketchVideo?style=social"></a>
+      </div>
+      
+
+      </div>
+    <div style="clear:both"></div>
+    <!-- <a href="/academic/publication/fupose" class="read-more">Read More</a> -->
+  </article>
+
+
+  
+    <article class="post unimportant post-hidden">
+  
+
+
+    <!-- <div style="position: relative; left:-50px; font-size: 18px;">2023</div> -->
+
+    <!-- <div style="text-align:center;"><img class="teaser-img" src="./images/sadtalker.gif"> </div> -->
+
+    <div class="teaser-container">
+      <img class="teaser-left" src="../../vinthony.github.io/academic/images/sadtalker.gif">
+    </div>
+
+    <div class="papertitle entry">SadTalker: Learning Realistic 3D Motion Coefficients for Stylized Audio-Driven Single Image Talking Face Animation</div>
+
+    <div class="entry authors-entry">
+      Wenxuan Zhang 🧑‍💻, <b>Xiaodong Cun 🧑‍💻</b>, <a href="https://scholar.google.com.tw/citations?user=h-3xd3EAAAAJ&amp;hl=zh-TW">Xuan Wang</a>, <a href="https://yzhang2016.github.io/yongnorriszhang.github.io/">Yong Zhang</a>,  <a href="https://xishen0220.github.io/">Xi Shen</a>, Yu Guo, Ying Shan, Fei Wang
+    </div>
+
+    <div class="entry">
+        <i>Computer Vision and Pattern Recognition (<b>CVPR</b>)</i>, <i>2023</i>
+        
+    </div>
+
+    <div class="entry user-info">
+
+      
+      <a class="links" target="_blank" href="https://arxiv.org/abs/2211.12194" rel="paperurl">arXiv</a>
+      
+
+      
+
+      
+      /
+      <a class="links" target="_blank" href="https://colab.research.google.com/github/Winfredy/SadTalker/blob/main/quick_demo.ipynb" rel="paperurl">Online Demo</a>
+      
+
+      
+      /
+      <a class="links" target="_blank" href="https://sadtalker.github.io/" rel="paperurl">Project Page</a>
+      
+
+      
+      /
+      <a target="_blank" href="https://github.com/Winfredy/SadTalker">Github</a>
+      
+
+      
+      <div style="display: inline-block;float:right" class="xcode">
+      <a href="https://github.com/Winfredy/SadTalker"><img src="https://img.shields.io/github/stars/Winfredy/SadTalker?style=social"></a>
+      </div>
+      
+
+      </div>
+    <div style="clear:both"></div>
+    <!-- <a href="/academic/publication/SadTalker" class="read-more">Read More</a> -->
+  </article>
+
+
+  
+    <article class="post unimportant post-hidden">
+  
+
+
+    <!-- <div style="position: relative; left:-50px; font-size: 18px;">2024</div> -->
+
+    <!-- <div style="text-align:center;"><img class="teaser-img" src="./images/scalecrafter.gif"> </div> -->
+
+    <div class="teaser-container">
+      <img class="teaser-left" src="../../vinthony.github.io/academic/images/scalecrafter.gif">
+    </div>
+
+    <div class="papertitle entry">ScaleCrafter: Tuning-free Higher-Resolution Visual Generation with Diffusion Models</div>
+
+    <div class="entry authors-entry">
+      Yingqing He, Shaoshu Yang, <a href="https://scholar.google.com/citations?user=6UPJSvwAAAAJ&amp;hl=zh-CN">Haoxin Chen </a>,  <b>Xiaodong Cun</b>, <a href="https://menghanxia.github.io/"> Menghan Xia</a>, <a href="https://yzhang2016.github.io/">Yong Zhang</a>, <a href="https://xinntao.github.io/">Xintao Wang</a>, Ran He, <a href="https://cqf.io">Qifeng Chen</a>, <a href="https://scholar.google.com/citations?user=4oXBp9UAAAAJ&amp;hl=zh-CN" target="_blank">Ying Shan</a>
+    </div>
+
+    <div class="entry">
+        <i><b>ICLR (Spotlight)</b></i>, <i>2024</i>
+        
+    </div>
+
+    <div class="entry user-info">
+
+      
+      <a class="links" target="_blank" href="https://arxiv.org/abs/2310.07702" rel="paperurl">arXiv</a>
+      
+
+      
+
+      
+
+      
+
+      
+      /
+      <a target="_blank" href="https://github.com/YingqingHe/ScaleCrafter">Github</a>
+      
+
+      
+      <div style="display: inline-block;float:right" class="xcode">
+      <a href="https://github.com/YingqingHe/ScaleCrafter"><img src="https://img.shields.io/github/stars/YingqingHe/ScaleCrafter?style=social"></a>
+      </div>
+      
+
+      </div>
+    <div style="clear:both"></div>
+    <!-- <a href="/academic/publication/ScaleCrafter" class="read-more">Read More</a> -->
+  </article>
+
+
+  
+    <article class="post unimportant post-hidden">
+  
+
+
+    <!-- <div style="position: relative; left:-50px; font-size: 18px;">2023</div> -->
+
+    <!-- <div style="text-align:center;"><img class="teaser-img" src="./images/talecrafter.gif"> </div> -->
+
+    <div class="teaser-container">
+      <img class="teaser-left" src="../../vinthony.github.io/academic/images/talecrafter.gif">
+    </div>
+
+    <div class="papertitle entry">TaleCrafter: Interactive Story Visualization with Multiple Characters</div>
+
+    <div class="entry authors-entry">
+      <a href="https://github.com/yuanygong">Yuan Gong</a>, <a href="https://carlyx.github.io/">Youxin Pang</a>, <b>Xiaodong Cun</b>, <a href="https://menghanxia.github.io/">Menghan Xia</a>, Yingqing He, Haoxin Chen, <a href="http://longyuewang.com/">Longyue Wang</a>, <a href="https://yzhang2016.github.io">Yong Zhang</a>, <a href="https://xinntao.github.io/">Xintao Wang</a>, <a href="https://scholar.google.com/citations?hl=zh-CN&amp;user=4oXBp9UAAAAJ">Ying Shan</a> and Yujiu Yang
+    </div>
+
+    <div class="entry">
+        <i><b>SIGGRAPH Asia</b> (Conference Track)</i>, <i>2023</i>
+        
+    </div>
+
+    <div class="entry user-info">
+
+      
+      <a class="links" target="_blank" href="https://arxiv.org/abs/2305.18247" rel="paperurl">arXiv</a>
+      
+
+      
+
+      
+
+      
+      /
+      <a class="links" target="_blank" href="https://videocrafter.github.io/TaleCrafter/" rel="paperurl">Project Page</a>
+      
+
+      
+      /
+      <a target="_blank" href="https://github.com/VideoCrafter/TaleCrafter">Github</a>
+      
+
+      
+      <div style="display: inline-block;float:right" class="xcode">
+      <a href="https://github.com/VideoCrafter/TaleCrafter"><img src="https://img.shields.io/github/stars/VideoCrafter/TaleCrafter?style=social"></a>
+      </div>
+      
+
+      </div>
+    <div style="clear:both"></div>
+    <!-- <a href="/academic/publication/talecrafter" class="read-more">Read More</a> -->
+  </article>
+
+
+  
+      
+        <article class="post">
+      
+  
+
+
+    <!-- <div style="position: relative; left:-50px; font-size: 18px;">2023</div> -->
+
+    <!-- <div style="text-align:center;"><img class="teaser-img" src="./images/celebbasis.png"> </div> -->
+
+    <div class="teaser-container">
+      <img class="teaser-left" src="../../vinthony.github.io/academic/images/celebbasis.png">
+    </div>
+
+    <div class="papertitle entry">Inserting Anybody in Diffusion Models via Celeb Basis</div>
+
+    <div class="entry authors-entry">
+      <a href="https://github.com/ygtxr1997" target="_blank">Ge Yuan</a>, <b>Xiaodong Cun</b>, <a href="https://yzhang2016.github.io" target="_blank">Yong Zhang</a>, <a href="https://scholar.google.com/citations?user=ym_t6QYAAAAJ&amp;hl=zh-CN&amp;oi=sra" target="_blank">Maomao Li</a>, <a href="https://chenyangqiqi.github.io/" target="_blank">Chenyang Qi</a>, <a href="https://xinntao.github.io/" target="_blank">Xintao Wang</a>, <a href="https://scholar.google.com/citations?hl=zh-CN&amp;user=4oXBp9UAAAAJ" target="_blank">Ying Shan</a>, <a href="https://scholar.google.com/citations?user=CCUQi50AAAAJ" target="_blank">Huicheng Zheng</a>
+    </div>
+
+    <div class="entry">
+        <i><b>NeurIPS</b></i>, <i>2023</i>
+        
+    </div>
+
+    <div class="entry user-info">
+
+      
+      <a class="links" target="_blank" href="https://arxiv.org/abs/2306.00926" rel="paperurl">arXiv</a>
+      
+
+      
+
+      
+
+      
+      /
+      <a class="links" target="_blank" href="https://celeb-basis.github.io/" rel="paperurl">Project Page</a>
+      
+
+      
+      /
+      <a target="_blank" href="https://github.com/ygtxr1997/CelebBasis">Github</a>
+      
+
+      
+      <div style="display: inline-block;float:right" class="xcode">
+      <a href="https://github.com/ygtxr1997/CelebBasis"><img src="https://img.shields.io/github/stars/ygtxr1997/CelebBasis?style=social"></a>
+      </div>
+      
+
+      </div>
+    <div style="clear:both"></div>
+    <!-- <a href="/academic/publication/celebbasis" class="read-more">Read More</a> -->
+  </article>
+
+
+  
+    <article class="post unimportant post-hidden">
+  
+
+
+    <!-- <div style="position: relative; left:-50px; font-size: 18px;">2023</div> -->
+
+    <!-- <div style="text-align:center;"><img class="teaser-img" src="./images/toontalker.gif"> </div> -->
+
+    <div class="teaser-container">
+      <img class="teaser-left" src="../../vinthony.github.io/academic/images/toontalker.gif">
+    </div>
+
+    <div class="papertitle entry">ToonTalker: Cross-Domain Face Reenactment</div>
+
+    <div class="entry authors-entry">
+      <a href="https://github.com/yuanygong">Yuan Gong</a>, <a href="https://yzhang2016.github.io">Yong Zhang</a>, <b>Xiaodong Cun</b>, <a href="https://feiiyin.github.io/">Fei Yin</a>, <a href="https://sites.google.com/site/yanbofan0124/">Yanbo Fan</a>, <a href="https://xuanwangvc.github.io/">Xuan Wang</a>, Baoyuan Wu, and Yujiu Yang
+    </div>
+
+    <div class="entry">
+        <i>International Conference on Computer Vision (<b>ICCV</b>)</i>, <i>2023</i>
+        
+    </div>
+
+    <div class="entry user-info">
+
+      
+      <a class="links" target="_blank" href="https://arxiv.org/abs/2308.12866" rel="paperurl">arXiv</a>
+      
+
+      
+
+      
+
+      
+
+      
+      /
+      <a target="_blank" href="https://github.com/OpenTalker/ToonTalker">Github</a>
+      
+
+      
+      <div style="display: inline-block;float:right" class="xcode">
+      <a href="https://github.com/OpenTalker/ToonTalker"><img src="https://img.shields.io/github/stars/OpenTalker/ToonTalker?style=social"></a>
+      </div>
+      
+
+      </div>
+    <div style="clear:both"></div>
+    <!-- <a href="/academic/publication/toontalker" class="read-more">Read More</a> -->
+  </article>
+
+
+  
+      
+        <article class="post">
+      
+  
+
+
+    <!-- <div style="position: relative; left:-50px; font-size: 18px;">2023</div> -->
+
+    <!-- <div style="text-align:center;"><img class="teaser-img" src="./images/livelyspeaker.gif"> </div> -->
+
+    <div class="teaser-container">
+      <img class="teaser-left" src="../../vinthony.github.io/academic/images/livelyspeaker.gif">
+    </div>
+
+    <div class="papertitle entry">LivelySpeaker: Towards Semantic-aware Co-Speech Gesture Generation</div>
+
+    <div class="entry authors-entry">
+      <a href="https://github.com/zyhbili">Yihao Zhi🧑‍💻</a>,  <b>Xiaodong Cun🧑‍💻</b>, <a href="https://xuelin-chen.github.io/">Xuelin Chen</a>, <a href="https://xishen0220.github.io/">Xi Shen</a>, <a href="https://guo-w.github.io/">Wen Guo</a>, <a href="http://scholar.google.com/citations?user=o31BPFsAAAAJ&amp;hl=zh-CN">Shaoli Huang </a>, <a href="https://scholar.google.com.sg/citations?user=fe-1v0MAAAAJ&amp;hl=en">Shenghua Gao</a>
+    </div>
+
+    <div class="entry">
+        <i>International Conference on Computer Vision (<b>ICCV</b>)</i>, <i>2023</i>
+        
+    </div>
+
+    <div class="entry user-info">
+
+      
+      <a class="links" target="_blank" href="https://arxiv.org/abs/2306.00926" rel="paperurl">arXiv</a>
+      
+
+      
+
+      
+
+      
+
+      
+      /
+      <a target="_blank" href="https://github.com/zyhbili/LivelySpeaker">Github</a>
+      
+
+      
+      <div style="display: inline-block;float:right" class="xcode">
+      <a href="https://github.com/zyhbili/LivelySpeaker"><img src="https://img.shields.io/github/stars/zyhbili/LivelySpeaker?style=social"></a>
+      </div>
+      
+
+      </div>
+    <div style="clear:both"></div>
+    <!-- <a href="/academic/publication/LivelySpeaker" class="read-more">Read More</a> -->
+  </article>
+
+
+  
+      
+        <article class="post">
+      
+  
+
+
+    <!-- <div style="position: relative; left:-50px; font-size: 18px;">2023</div> -->
+
+    <!-- <div style="text-align:center;"><img class="teaser-img" src="./images/docshadow.png"> </div> -->
+
+    <div class="teaser-container">
+      <img class="teaser-left" src="../../vinthony.github.io/academic/images/docshadow.png">
+    </div>
+
+    <div class="papertitle entry">High-Resolution Document Shadow Removal via A Large-Scale Real-World Dataset and A Frequency-Aware Shadow Erasing Net</div>
+
+    <div class="entry authors-entry">
+      <a href="https://zinuoli.github.io/">Zinuo Li 🧑‍💻</a>, <a href="https://cxh.netlify.app/">Xuhang Chen 🧑‍💻</a>, <a href="http://www.cis.umac.mo/~cmpun/">Chi-Man Pun 📮</a>, <b>Xiaodong Cun 📮</b>
+    </div>
+
+    <div class="entry">
+        <i>International Conference on Computer Vision (<b>ICCV</b>)</i>, <i>2023</i>
+        
+    </div>
+
+    <div class="entry user-info">
+
+      
+      <a class="links" target="_blank" href="https://arxiv.org/abs/2308.14221" rel="paperurl">arXiv</a>
+      
+
+      
+
+      
+
+      
+      /
+      <a class="links" target="_blank" href="https://cxh-research.github.io/DocShadow-SD7K/" rel="paperurl">Project Page</a>
+      
+
+      
+      /
+      <a target="_blank" href="https://github.com/CXH-Research/DocShadow-SD7K">Github</a>
+      
+
+      
+      <div style="display: inline-block;float:right" class="xcode">
+      <a href="https://github.com/CXH-Research/DocShadow-SD7K"><img src="https://img.shields.io/github/stars/CXH-Research/DocShadow-SD7K?style=social"></a>
+      </div>
+      
+
+      </div>
+    <div style="clear:both"></div>
+    <!-- <a href="/academic/publication/docshadow" class="read-more">Read More</a> -->
+  </article>
+
+
+  
+      
+        <article class="post">
+      
+  
+
+
+    <!-- <div style="position: relative; left:-50px; font-size: 18px;">2023</div> -->
+
+    <!-- <div style="text-align:center;"><img class="teaser-img" src="./images/vpt.png"> </div> -->
+
+    <div class="teaser-container">
+      <img class="teaser-left" src="../../vinthony.github.io/academic/images/vpt.png">
+    </div>
+
+    <div class="papertitle entry">Explicit Visual Prompting for Low-Level Structure Segmentations</div>
+
+    <div class="entry authors-entry">
+      Weihuang Liu, <a href="https://xishen0220.github.io/">Xi Shen </a>,  <a href="http://www.cis.umac.mo/~cmpun/">Chi-Man Pun  📮</a>, <b>Xiaodong Cun 📮</b>
+    </div>
+
+    <div class="entry">
+        <i>Computer Vision and Pattern Recognition (<b>CVPR</b>) &amp; Journal Submission</i>, <i>2023</i>
+        
+    </div>
+
+    <div class="entry user-info">
+
+      
+      <a class="links" target="_blank" href="https://arxiv.org/abs/2303.10883" rel="paperurl">arXiv</a>
+      
+
+      
+      /
+      <a class="links" target="_blank" href="https://arxiv.org/abs/2305.18476" rel="paperurl">Extended Version</a>
+      
+
+      
+
+      
+      /
+      <a class="links" target="_blank" href="https://nifangbaage.github.io/Explicit-Visual-Prompt/" rel="paperurl">Project Page</a>
+      
+
+      
+      /
+      <a target="_blank" href="https://github.com/NiFangBaAGe/Explicit-Visual-Prompt">Github</a>
+      
+
+      
+      <div style="display: inline-block;float:right" class="xcode">
+      <a href="https://github.com/NiFangBaAGe/Explicit-Visual-Prompt"><img src="https://img.shields.io/github/stars/NiFangBaAGe/Explicit-Visual-Prompt?style=social"></a>
+      </div>
+      
+
+      </div>
+    <div style="clear:both"></div>
+    <!-- <a href="/academic/publication/vpt" class="read-more">Read More</a> -->
+  </article>
+
+
+  
+    <article class="post unimportant post-hidden">
+  
+
+
+    <!-- <div style="position: relative; left:-50px; font-size: 18px;">2023</div> -->
+
+    <!-- <div style="text-align:center;"><img class="teaser-img" src="./images/t2m.gif"> </div> -->
+
+    <div class="teaser-container">
+      <img class="teaser-left" src="../../vinthony.github.io/academic/images/t2m.gif">
+    </div>
+
+    <div class="papertitle entry">T2M-GPT: Generating Human Motion from Textual Descriptions with Discrete Representations</div>
+
+    <div class="entry authors-entry">
+      Jianrong Zhang 🧑‍💻, Yangsong Zhang 🧑‍💻, <b>Xiaodong Cun</b>, <a href="https://scholar.google.com/citations?user=o31BPFsAAAAJ&amp;hl=en">Shaoli Huang</a>, <a href="https://yzhang2016.github.io/">Yong Zhang</a>, Hongwei Zhao, Hongtao Lu, <a href="https://xishen0220.github.io/">Xi Shen 📮</a>
+    </div>
+
+    <div class="entry">
+        <i>Computer Vision and Pattern Recognition (<b>CVPR</b>)</i>, <i>2023</i>
+        
+    </div>
+
+    <div class="entry user-info">
+
+      
+      <a class="links" target="_blank" href="https://arxiv.org/abs/2211.12194" rel="paperurl">arXiv</a>
+      
+
+      
+
+      
+      /
+      <a class="links" target="_blank" href="https://colab.research.google.com/drive/1Vy69w2q2d-Hg19F-KibqG0FRdpSj3L4O?usp=sharing" rel="paperurl">Online Demo</a>
+      
+
+      
+      /
+      <a class="links" target="_blank" href="https://mael-zys.github.io/T2M-GPT/" rel="paperurl">Project Page</a>
+      
+
+      
+      /
+      <a target="_blank" href="https://github.com/Mael-zys/T2M-GPT">Github</a>
+      
+
+      
+      <div style="display: inline-block;float:right" class="xcode">
+      <a href="https://github.com/Mael-zys/T2M-GPT"><img src="https://img.shields.io/github/stars/Mael-zys/T2M-GPT?style=social"></a>
+      </div>
+      
+
+      </div>
+    <div style="clear:both"></div>
+    <!-- <a href="/academic/publication/motionGPT" class="read-more">Read More</a> -->
+  </article>
+
+
+  
+    <article class="post unimportant post-hidden">
+  
+
+
+    <!-- <div style="position: relative; left:-50px; font-size: 18px;">2023</div> -->
+
+    <!-- <div style="text-align:center;"><img class="teaser-img" src="./images/3DGAN_Inversion.jpg"> </div> -->
+
+    <div class="teaser-container">
+      <img class="teaser-left" src="../../vinthony.github.io/academic/images/3DGAN_Inversion.jpg">
+    </div>
+
+    <div class="papertitle entry">3D GAN Inversion with Facial Symmetry Prior</div>
+
+    <div class="entry authors-entry">
+      <a href="https://feiiyin.github.io/">Fei Yin</a>, <a href="https://yzhang2016.github.io/">Yong Zhang</a>, <a href="https://xuanwangvc.github.io/">Xuan Wang</a>, Tengfei Wang, <a href="https://xiaoyu258.github.io/">Xiaoyu Li</a>, Yuan Gong, <a href="https://sites.google.com/site/yanbofan0124/">Yanbo Fan</a>, <b>Xiaodong Cun</b>, Ying Shan, Cengiz Oztireli, Yujiu Yang
+    </div>
+
+    <div class="entry">
+        <i>Computer Vision and Pattern Recognition (<b>CVPR</b>)</i>, <i>2023</i>
+        
+    </div>
+
+    <div class="entry user-info">
+
+      
+      <a class="links" target="_blank" href="https://arxiv.org/abs/2211.16927" rel="paperurl">arXiv</a>
+      
+
+      
+
+      
+
+      
+      /
+      <a class="links" target="_blank" href="https://feiiyin.github.io/SPI/" rel="paperurl">Project Page</a>
+      
+
+      
+      /
+      <a target="_blank" href="https://github.com/FeiiYin/SPI">Github</a>
+      
+
+      
+      <div style="display: inline-block;float:right" class="xcode">
+      <a href="https://github.com/FeiiYin/SPI"><img src="https://img.shields.io/github/stars/FeiiYin/SPI?style=social"></a>
+      </div>
+      
+
+      </div>
+    <div style="clear:both"></div>
+    <!-- <a href="/academic/publication/3dgan" class="read-more">Read More</a> -->
+  </article>
+
+
+  
+    <article class="post unimportant post-hidden">
+  
+
+
+    <!-- <div style="position: relative; left:-50px; font-size: 18px;">2023</div> -->
+
+    <!-- <div style="text-align:center;"><img class="teaser-img" src="./images/dpe.jpg"> </div> -->
+
+    <div class="teaser-container">
+      <img class="teaser-left" src="../../vinthony.github.io/academic/images/dpe.jpg">
+    </div>
+
+    <div class="papertitle entry">DPE: Disentanglement of Pose and Expression for General Video Portrait Editing</div>
+
+    <div class="entry authors-entry">
+      Youxin Pang, <a href="https://yzhang2016.github.io/">Yong Zhang</a>, Weize Quan, <a href="https://sites.google.com/site/yanbofan0124/">Yanbo Fan</a>, <b>Xiaodong Cun</b>, Ying Shan, Dong-ming Yan
+    </div>
+
+    <div class="entry">
+        <i>Computer Vision and Pattern Recognition (<b>CVPR</b>)</i>, <i>2023</i>
+        
+    </div>
+
+    <div class="entry user-info">
+
+      
+      <a class="links" target="_blank" href="https://arxiv.org/abs/2301.06281" rel="paperurl">arXiv</a>
+      
+
+      
+
+      
+
+      
+      /
+      <a class="links" target="_blank" href="https://carlyx.github.io/DPE/" rel="paperurl">Project Page</a>
+      
+
+      
+      /
+      <a target="_blank" href="https://github.com/Carlyx/DPE">Github</a>
+      
+
+      
+      <div style="display: inline-block;float:right" class="xcode">
+      <a href="https://github.com/Carlyx/DPE"><img src="https://img.shields.io/github/stars/Carlyx/DPE?style=social"></a>
+      </div>
+      
+
+      </div>
+    <div style="clear:both"></div>
+    <!-- <a href="/academic/publication/dpe" class="read-more">Read More</a> -->
+  </article>
+
+
+  
+    <article class="post unimportant post-hidden">
+  
+
+
+    <!-- <div style="position: relative; left:-50px; font-size: 18px;">2023</div> -->
+
+    <!-- <div style="text-align:center;"><img class="teaser-img" src="./images/codetalker.gif"> </div> -->
+
+    <div class="teaser-container">
+      <img class="teaser-left" src="../../vinthony.github.io/academic/images/codetalker.gif">
+    </div>
+
+    <div class="papertitle entry">CodeTalker: Speech-Driven 3D Facial Animation with Discrete Motion Prior</div>
+
+    <div class="entry authors-entry">
+      <a href="https://doubiiu.github.io/">Jinbo Xing</a>, <a href="https://menghanxia.github.io/">Menghan Xia</a>, <a href="https://julianjuaner.github.io/">Yuechen Zhang</a>, <b>Xiaodong Cun</b>, <a href="https://juewang725.github.io/">Jue Wang</a>, <a href="https://www.cse.cuhk.edu.hk/~ttwong/myself.html">Tien-Tsin Wong</a>
+    </div>
+
+    <div class="entry">
+        <i>Computer Vision and Pattern Recognition (<b>CVPR</b>)</i>, <i>2023</i>
+        
+    </div>
+
+    <div class="entry user-info">
+
+      
+      <a class="links" target="_blank" href="https://arxiv.org/abs/2301.02379" rel="paperurl">arXiv</a>
+      
+
+      
+
+      
+
+      
+      /
+      <a class="links" target="_blank" href="https://doubiiu.github.io/projects/codetalker/" rel="paperurl">Project Page</a>
+      
+
+      
+      /
+      <a target="_blank" href="https://github.com/Doubiiu/CodeTalker">Github</a>
+      
+
+      
+      <div style="display: inline-block;float:right" class="xcode">
+      <a href="https://github.com/Doubiiu/CodeTalker"><img src="https://img.shields.io/github/stars/Doubiiu/CodeTalker?style=social"></a>
+      </div>
+      
+
+      </div>
+    <div style="clear:both"></div>
+    <!-- <a href="/academic/publication/CodeTalker" class="read-more">Read More</a> -->
+  </article>
+
+
+  
+      
+        <article class="post">
+      
+  
+
+
+    <!-- <div style="position: relative; left:-50px; font-size: 18px;">2023</div> -->
+
+    <!-- <div style="text-align:center;"><img class="teaser-img" src="./images/coord_fill.png"> </div> -->
+
+    <div class="teaser-container">
+      <img class="teaser-left" src="../../vinthony.github.io/academic/images/coord_fill.png">
+    </div>
+
+    <div class="papertitle entry">CoordFill: Efficient High-Resolution Image Inpainting via Parameterized Coordinate Querying</div>
+
+    <div class="entry authors-entry">
+      Weihuang Liu, <b>Xiaodong Cun 📮</b>,  <a href="http://www.cis.umac.mo/~cmpun/">Chi-Man Pun 📮</a>, <a href="https://menghanxia.github.io/">Menghan Xia</a>, <a href="https://yzhang2016.github.io/yongnorriszhang.github.io/">Yong Zhang</a>, and <a href="https://juewang725.github.io/">Jue Wang</a>
+    </div>
+
+    <div class="entry">
+        <i>AAAI Conference on Artificial Intelligence (<b>AAAI, Oral</b>)</i>, <i>2023</i>
+        
+    </div>
+
+    <div class="entry user-info">
+
+      
+      <a class="links" target="_blank" href="https://arxiv.org/abs/2303.08524" rel="paperurl">arXiv</a>
+      
+
+      
+
+      
+
+      
+
+      
+      /
+      <a target="_blank" href="https://github.com/NiFangBaAGe/CoordFill">Github</a>
+      
+
+      
+      <div style="display: inline-block;float:right" class="xcode">
+      <a href="https://github.com/NiFangBaAGe/CoordFill"><img src="https://img.shields.io/github/stars/NiFangBaAGe/CoordFill?style=social"></a>
+      </div>
+      
+
+      </div>
+    <div style="clear:both"></div>
+    <!-- <a href="/academic/publication/coordfill" class="read-more">Read More</a> -->
+  </article>
+
+
+  
+    <article class="post unimportant post-hidden">
+  
+
+
+    <!-- <div style="position: relative; left:-50px; font-size: 18px;">2022</div> -->
+
+    <!-- <div style="text-align:center;"><img class="teaser-img" src="./images/video-retalking.gif"> </div> -->
+
+    <div class="teaser-container">
+      <img class="teaser-left" src="../../vinthony.github.io/academic/images/video-retalking.gif">
+    </div>
+
+    <div class="papertitle entry">VideoReTalking: Audio-based Lip Synchronization for Talking Head Video Editing In the Wild</div>
+
+    <div class="entry authors-entry">
+      Kun Cheng 🧑‍💻, <b>Xiaodong Cun 🧑‍💻📮</b>, <a href="https://yzhang2016.github.io/">Yong Zhang</a>, <a href="https://menghanxia.github.io/">Menghan Xia</a>, <a href="https://feiiyin.github.io/">Fei Yin</a>, <br> Mingrui Zhu, <a href="https://xuanwangvc.github.io/">Xuan Wang</a>,  <a href="https://juewang725.github.io/">Jue Wang</a>, Nannan Wang
+    </div>
+
+    <div class="entry">
+        <i><b>SIGGRAPH Asia</b> (Conference Track)</i>, <i>2022</i>
+        
+    </div>
+
+    <div class="entry user-info">
+
+      
+      <a class="links" target="_blank" href="https://arxiv.org/abs/2211.14758" rel="paperurl">arXiv</a>
+      
+
+      
+
+      
+
+      
+      /
+      <a class="links" target="_blank" href="https://vinthony.github.io/video-retalking/" rel="paperurl">Project Page</a>
+      
+
+      
+      /
+      <a target="_blank" href="https://github.com/vinthony/video-retalking">Github</a>
+      
+
+      
+      <div style="display: inline-block;float:right" class="xcode">
+      <a href="https://github.com/vinthony/video-retalking"><img src="https://img.shields.io/github/stars/vinthony/video-retalking?style=social"></a>
+      </div>
+      
+
+      </div>
+    <div style="clear:both"></div>
+    <!-- <a href="/academic/publication/VideoReTalking" class="read-more">Read More</a> -->
+  </article>
+
+
+  
+    <article class="post unimportant post-hidden">
+  
+
+
+    <!-- <div style="position: relative; left:-50px; font-size: 18px;">2022</div> -->
+
+    <!-- <div style="text-align:center;"><img class="teaser-img" src="./images/styleheat.gif"> </div> -->
+
+    <div class="teaser-container">
+      <img class="teaser-left" src="../../vinthony.github.io/academic/images/styleheat.gif">
+    </div>
+
+    <div class="papertitle entry">StyleHEAT: One-Shot High-Resolution Editable Talking Face Generation via Pretrained StyleGAN</div>
+
+    <div class="entry authors-entry">
+      <a href="https://feiiyin.github.io/">Fei Yin</a>, <a href="https://yzhang2016.github.io/">Yong Zhang</a>, <b>Xiaodong Cun</b>, Mingdeng Cao, <a href="https://sites.google.com/site/yanbofan0124/">Yanbo Fan</a>, <a href="https://scholar.google.com.tw/citations?user=h-3xd3EAAAAJ&amp;hl=zh-TW">Xuan Wang</a>, Qingyan Bai, Baoyuan Wu, <a href="https://juewang725.github.io/">Jue Wang</a>, Yujiu Yang
+    </div>
+
+    <div class="entry">
+        <i>European Conference on Computer Vision (<b>ECCV</b>)</i>, <i>2022</i>
+        
+    </div>
+
+    <div class="entry user-info">
+
+      
+      <a class="links" target="_blank" href="https://arxiv.org/abs/2203.04036" rel="paperurl">arXiv</a>
+      
+
+      
+
+      
+
+      
+      /
+      <a class="links" target="_blank" href="https://feiiyin.github.io/StyleHEAT/" rel="paperurl">Project Page</a>
+      
+
+      
+      /
+      <a target="_blank" href="https://github.com/FeiiYin/StyleHEAT">Github</a>
+      
+
+      
+      <div style="display: inline-block;float:right" class="xcode">
+      <a href="https://github.com/FeiiYin/StyleHEAT"><img src="https://img.shields.io/github/stars/FeiiYin/StyleHEAT?style=social"></a>
+      </div>
+      
+
+      </div>
+    <div style="clear:both"></div>
+    <!-- <a href="/academic/publication/heat" class="read-more">Read More</a> -->
+  </article>
+
+
+  
+    <article class="post unimportant post-hidden">
+  
+
+
+    <!-- <div style="position: relative; left:-50px; font-size: 18px;">2024</div> -->
+
+    <!-- <div style="text-align:center;"><img class="teaser-img" src="./images/videocrafter.gif"> </div> -->
+
+    <div class="teaser-container">
+      <img class="teaser-left" src="../../vinthony.github.io/academic/images/videocrafter.gif">
+    </div>
+
+    <div class="papertitle entry">VideoCrafter1 &amp; VideoCrafter2</div>
+
+    <div class="entry authors-entry">
+      <a href="https://scholar.google.com/citations?user=6UPJSvwAAAAJ&amp;hl=zh-CN">Haoxin Chen 🧑‍💻</a>, Menghan Xia 🧑‍💻, <a href="https://yzhang2016.github.io/">Yong Zhang 🧑‍💻</a>,  <b>Xiaodong Cun🧑‍💻</b>,<a href="https://xinntao.github.io/">Xintao Wang</a>, <a href="https://scholar.google.com/citations?user=4oXBp9UAAAAJ&amp;hl=zh-CN" target="_blank">Ying Shan</a>
+    </div>
+
+    <div class="entry">
+        <i>Computer Vision and Pattern Recognition (<b>CVPR</b>) &amp; Technical report</i>, <i>2024</i>
+        
+    </div>
+
+    <div class="entry user-info">
+
+      
+      <a class="links" target="_blank" href="https://arxiv.org/abs/2310.19512" rel="paperurl">arXiv</a>
+      
+
+      
+
+      
+
+      
+      /
+      <a class="links" target="_blank" href="https://ailab-cvc.github.io/videocrafter2/" rel="paperurl">Project Page</a>
+      
+
+      
+      /
+      <a target="_blank" href="https://github.com/AILab-CVC/VideoCrafter">Github</a>
+      
+
+      
+      <div style="display: inline-block;float:right" class="xcode">
+      <a href="https://github.com/AILab-CVC/VideoCrafter"><img src="https://img.shields.io/github/stars/AILab-CVC/VideoCrafter?style=social"></a>
+      </div>
+      
+
+      </div>
+    <div style="clear:both"></div>
+    <!-- <a href="/academic/publication/VideoCrafter" class="read-more">Read More</a> -->
+  </article>
+
+
+  
+      
+        <article class="post">
+      
+  
+
+
+    <!-- <div style="position: relative; left:-50px; font-size: 18px;">2022</div> -->
+
+    <!-- <div style="text-align:center;"><img class="teaser-img" src="./images/s2crnet.gif"> </div> -->
+
+    <div class="teaser-container">
+      <img class="teaser-left" src="../../vinthony.github.io/academic/images/s2crnet.gif">
+    </div>
+
+    <div class="papertitle entry">Spatial-Separated Curve Rendering Network for Efficient and High-Resolution Image Harmonization</div>
+
+    <div class="entry authors-entry">
+      Jingtang Liang 🧑‍💻 , <b>Xiaodong Cun 🧑‍💻</b> ,  <a href="http://www.cis.umac.mo/~cmpun/">Chi-Man Pun</a>, <a href="https://juewang725.github.io/">Jue Wang</a>
+    </div>
+
+    <div class="entry">
+        <i>European Conference on Computer Vision (<b>ECCV</b>)</i>, <i>2022</i>
+        
+    </div>
+
+    <div class="entry user-info">
+
+      
+      <a class="links" target="_blank" href="https://arxiv.org/abs/2109.05750" rel="paperurl">arXiv</a>
+      
+
+      
+
+      
+      /
+      <a class="links" target="_blank" href="https://colab.research.google.com/drive/12gH5XDhpCGS_B_5xaJtCVvYrw6gfHtaS#scrollTo=Y5vFGrBLctND" rel="paperurl">Online Demo</a>
+      
+
+      
+      /
+      <a class="links" target="_blank" href="https://github.com/vinthony/S2CRNet-demos" rel="paperurl">Project Page</a>
+      
+
+      
+      /
+      <a target="_blank" href="https://github.com/stefanLeong/S2CRNet">Github</a>
+      
+
+      
+      <div style="display: inline-block;float:right" class="xcode">
+      <a href="https://github.com/stefanLeong/S2CRNet"><img src="https://img.shields.io/github/stars/stefanLeong/S2CRNet?style=social"></a>
+      </div>
+      
+
+      </div>
+    <div style="clear:both"></div>
+    <!-- <a href="/academic/publication/ss2crnet" class="read-more">Read More</a> -->
+  </article>
+
+
+  
+    <article class="post unimportant post-hidden">
+  
+
+
+    <!-- <div style="position: relative; left:-50px; font-size: 18px;">2023</div> -->
+
+    <!-- <div style="text-align:center;"><img class="teaser-img" src="./images/fatezero.gif"> </div> -->
+
+    <div class="teaser-container">
+      <img class="teaser-left" src="../../vinthony.github.io/academic/images/fatezero.gif">
+    </div>
+
+    <div class="papertitle entry">FateZero: Fusing Attentions for Zero-shot Text-based Video Editing</div>
+
+    <div class="entry authors-entry">
+      <a href="https://chenyangqiqi.github.io/">Chenyang Qi</a>, <b>Xiaodong Cun 📮</b>, <a href="https://yzhang2016.github.io">Yong Zhang</a>, <a href="https://chenyanglei.github.io/">Chenyang Lei</a>, <a href="https://xinntao.github.io/">Xintao Wang</a>, <a href="https://scholar.google.com/citations?hl=zh-CN&amp;user=4oXBp9UAAAAJ">Ying Shan</a>, <a href="https://cqf.io">Qifeng Chen 📮</a>
+    </div>
+
+    <div class="entry">
+        <i>International Conference on Computer Vision (<b>ICCV</b>)</i>, <i>2023</i>
+        
+    </div>
+
+    <div class="entry user-info">
+
+      
+      <a class="links" target="_blank" href="https://arxiv.org/abs/2303.09535" rel="paperurl">arXiv</a>
+      
+
+      
+
+      
+
+      
+      /
+      <a class="links" target="_blank" href="https://fate-zero-edit.github.io/" rel="paperurl">Project Page</a>
+      
+
+      
+      /
+      <a target="_blank" href="https://github.com/ChenyangQiQi/FateZero">Github</a>
+      
+
+      
+      <div style="display: inline-block;float:right" class="xcode">
+      <a href="https://github.com/ChenyangQiQi/FateZero"><img src="https://img.shields.io/github/stars/ChenyangQiQi/FateZero?style=social"></a>
+      </div>
+      
+
+      </div>
+    <div style="clear:both"></div>
+    <!-- <a href="/academic/publication/fatezero" class="read-more">Read More</a> -->
+  </article>
+
+
+  
+    <article class="post unimportant post-hidden">
+  
+
+
+    <!-- <div style="position: relative; left:-50px; font-size: 18px;">2022</div> -->
+
+    <!-- <div style="text-align:center;"><img class="teaser-img" src="./images/uformer.gif"> </div> -->
+
+    <div class="teaser-container">
+      <img class="teaser-left" src="../../vinthony.github.io/academic/images/uformer.gif">
+    </div>
+
+    <div class="papertitle entry">Uformer: A General U-Shaped Transformer for Image Restoration</div>
+
+    <div class="entry authors-entry">
+      <a href="https://zhendongwang6.github.io/">Zhendong Wang</a>, <b>Xiaodong Cun 📮</b>, <a href="https://jianminbao.github.io/">Jianmin Bao</a>, <a href="https://people.ucas.ac.cn/~jzliu?language=en">Jianzhuang Liu</a>, <a href="http://staff.ustc.edu.cn/~zhwg/">Wengang Zhou</a>, <a href="http://staff.ustc.edu.cn/~zhwg/">Houqiang Li</a>
+    </div>
+
+    <div class="entry">
+        <i>Computer Vision and Pattern Recognition (<b>CVPR</b>)</i>, <i>2022</i>
+        
+    </div>
+
+    <div class="entry user-info">
+
+      
+      <a class="links" target="_blank" href="https://arxiv.org/abs/2106.03106" rel="paperurl">arXiv</a>
+      
+
+      
+
+      
+
+      
+
+      
+      /
+      <a target="_blank" href="https://github.com/ZhendongWang6/Uformer">Github</a>
+      
+
+      
+      <div style="display: inline-block;float:right" class="xcode">
+      <a href="https://github.com/ZhendongWang6/Uformer"><img src="https://img.shields.io/github/stars/ZhendongWang6/Uformer?style=social"></a>
+      </div>
+      
+
+      </div>
+    <div style="clear:both"></div>
+    <!-- <a href="/academic/publication/dbd" class="read-more">Read More</a> -->
+  </article>
+
+
+  
+    <article class="post unimportant post-hidden">
+  
+
+
+    <!-- <div style="position: relative; left:-50px; font-size: 18px;">2021</div> -->
+
+    <!-- <div style="text-align:center;"><img class="teaser-img" src="./images/cc.jpg"> </div> -->
+
+    <div class="teaser-container">
+      <img class="teaser-left" src="../../vinthony.github.io/academic/images/cc.jpg">
+    </div>
+
+    <div class="papertitle entry">Learning Enriched Illuminants for Cross and Single Sensor Color Constancy</div>
+
+    <div class="entry authors-entry">
+      <b>Xiaodong Cun 🧑‍💻</b>, Zhendong Wang 🧑‍💻,  <a href="http://www.cis.umac.mo/~cmpun/">Chi-Man Pun</a>, Wengang Zhou, Jianzhuang Liu, Xu Jia, Houqiang Li
+    </div>
+
+    <div class="entry">
+        <i>Preprint</i>, <i>2021</i>
+        
+    </div>
+
+    <div class="entry user-info">
+
+      
+      <a class="links" target="_blank" href="https://arxiv.org/abs/2203.11068" rel="paperurl">arXiv</a>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      </div>
+    <div style="clear:both"></div>
+    <!-- <a href="/academic/publication/cc" class="read-more">Read More</a> -->
+  </article>
+
+
+  
+      
+        <article class="post">
+      
+  
+
+
+    <!-- <div style="position: relative; left:-50px; font-size: 18px;">2021</div> -->
+
+    <!-- <div style="text-align:center;"><img class="teaser-img" src="./images/watermark.gif"> </div> -->
+
+    <div class="teaser-container">
+      <img class="teaser-left" src="../../vinthony.github.io/academic/images/watermark.gif">
+    </div>
+
+    <div class="papertitle entry">Split then Refine: Sequential Attention-guided ResUNets for Blind Single Image Visible Watermark Removal</div>
+
+    <div class="entry authors-entry">
+      <b>Xiaodong Cun</b>, <a href="http://www.cis.umac.mo/~cmpun/">Chi-Man Pun</a>
+    </div>
+
+    <div class="entry">
+        <i>AAAI Conference on Artificial Intelligence (<b>AAAI</b>)</i>, <i>2021</i>
+        
+    </div>
+
+    <div class="entry user-info">
+
+      
+      <a class="links" target="_blank" href="https://arxiv.org/abs/2012.07007" rel="paperurl">arXiv</a>
+      
+
+      
+
+      
+      /
+      <a class="links" target="_blank" href="https://colab.research.google.com/drive/1pYY7byBjM-7aFIWk8HcF9nK_s6pqGwww?usp=sharing" rel="paperurl">Online Demo</a>
+      
+
+      
+
+      
+      /
+      <a target="_blank" href="https://github.com/vinthony/deep-blind-watermark-removal">Github</a>
+      
+
+      
+      <div style="display: inline-block;float:right" class="xcode">
+      <a href="https://github.com/vinthony/deep-blind-watermark-removal"><img src="https://img.shields.io/github/stars/vinthony/deep-blind-watermark-removal?style=social"></a>
+      </div>
+      
+
+      </div>
+    <div style="clear:both"></div>
+    <!-- <a href="/academic/publication/dbd" class="read-more">Read More</a> -->
+  </article>
+
+
+  
+      
+        <article class="post">
+      
+  
+
+
+    <!-- <div style="position: relative; left:-50px; font-size: 18px;">2020</div> -->
+
+    <!-- <div style="text-align:center;"><img class="teaser-img" src="./images/defocus.gif"> </div> -->
+
+    <div class="teaser-container">
+      <img class="teaser-left" src="../../vinthony.github.io/academic/images/defocus.gif">
+    </div>
+
+    <div class="papertitle entry">Defocus Blur Detection via Depth Distillation</div>
+
+    <div class="entry authors-entry">
+      <b>Xiaodong Cun</b>,  <a href="http://www.cis.umac.mo/~cmpun/">Chi-Man Pun</a>
+    </div>
+
+    <div class="entry">
+        <i>European Conference on Computer Vision (<b>ECCV</b>)</i>, <i>2020</i>
+        
+    </div>
+
+    <div class="entry user-info">
+
+      
+      <a class="links" target="_blank" href="https://arxiv.org/abs/2007.08113" rel="paperurl">arXiv</a>
+      
+
+      
+
+      
+      /
+      <a class="links" target="_blank" href="https://colab.research.google.com/drive/1a-Un_lZqkEN-mr-SzQh9GLy4qXIJgn0v?usp=sharing" rel="paperurl">Online Demo</a>
+      
+
+      
+
+      
+      /
+      <a target="_blank" href="https://github.com/vinthony/depth-distillation">Github</a>
+      
+
+      
+      <div style="display: inline-block;float:right" class="xcode">
+      <a href="https://github.com/vinthony/depth-distillation"><img src="https://img.shields.io/github/stars/vinthony/depth-distillation?style=social"></a>
+      </div>
+      
+
+      </div>
+    <div style="clear:both"></div>
+    <!-- <a href="/academic/publication/dbd" class="read-more">Read More</a> -->
+  </article>
+
+
+  
+    <article class="post unimportant post-hidden">
+  
+
+
+    <!-- <div style="position: relative; left:-50px; font-size: 18px;">2024</div> -->
+
+    <!-- <div style="text-align:center;"><img class="teaser-img" src="./images/fupose.gif"> </div> -->
+
+    <div class="teaser-container">
+      <img class="teaser-left" src="../../vinthony.github.io/academic/images/fupose.gif">
+    </div>
+
+    <div class="papertitle entry">Follow Your Pose: Pose-Guided Text-to-Video Generation using Pose-Free Videos</div>
+
+    <div class="entry authors-entry">
+      <a href="https://mayuelala.github.io/">Yue Ma 🧑‍💻</a>, <a href="https://github.com/YingqingHe">Yingqing He 🧑‍💻</a>, <b>Xiaodong Cun</b>, <a href="https://xinntao.github.io/">Xintao Wang</a>, <a href="https://scholar.google.com/citations?hl=zh-CN&amp;user=4oXBp9UAAAAJ">Ying Shan</a>, <a href="https://scholar.google.com/citations?user=Xrh1OIUAAAAJ&amp;hl=zh-CN"> Xiu Li </a>, <a href="https://cqf.io">Qifeng Chen</a>
+    </div>
+
+    <div class="entry">
+        <i>AAAI Conference on Artificial Intelligence (<b>AAAI </b>)</i>, <i>2024</i>
+        
+    </div>
+
+    <div class="entry user-info">
+
+      
+      <a class="links" target="_blank" href="https://arxiv.org/abs/2304.01186" rel="paperurl">arXiv</a>
+      
+
+      
+
+      
+
+      
+      /
+      <a class="links" target="_blank" href="https://follow-your-pose.github.io/" rel="paperurl">Project Page</a>
+      
+
+      
+      /
+      <a target="_blank" href="https://github.com/mayuelala/FollowYourPose">Github</a>
+      
+
+      
+      <div style="display: inline-block;float:right" class="xcode">
+      <a href="https://github.com/mayuelala/FollowYourPose"><img src="https://img.shields.io/github/stars/mayuelala/FollowYourPose?style=social"></a>
+      </div>
+      
+
+      </div>
+    <div style="clear:both"></div>
+    <!-- <a href="/academic/publication/fupose" class="read-more">Read More</a> -->
+  </article>
+
+
+  
+      
+        <article class="post">
+      
+  
+
+
+    <!-- <div style="position: relative; left:-50px; font-size: 18px;">2020</div> -->
+
+    <!-- <div style="text-align:center;"><img class="teaser-img" src="./images/harmonization.gif"> </div> -->
+
+    <div class="teaser-container">
+      <img class="teaser-left" src="../../vinthony.github.io/academic/images/harmonization.gif">
+    </div>
+
+    <div class="papertitle entry">Improving the Harmony of the Composite Image by Spatial-Separated Attention Module</div>
+
+    <div class="entry authors-entry">
+      <b>Xiaodong Cun</b>,  <a href="http://www.cis.umac.mo/~cmpun/">Chi-Man Pun</a>
+    </div>
+
+    <div class="entry">
+        <i>IEEE Trans. on Image Processing (<b>TIP</b>)</i>, <i>2020</i>
+        
+    </div>
+
+    <div class="entry user-info">
+
+      
+      <a class="links" target="_blank" href="https://arxiv.org/abs/1907.06406" rel="paperurl">arXiv</a>
+      
+
+      
+
+      
+      /
+      <a class="links" target="_blank" href="https://colab.research.google.com/drive/1UTjyi0J1F2mjc9rf9ZbFUOL2_kkZmdlQ?usp=sharing" rel="paperurl">Online Demo</a>
+      
+
+      
+
+      
+      /
+      <a target="_blank" href="https://github.com/vinthony/s2am">Github</a>
+      
+
+      
+      <div style="display: inline-block;float:right" class="xcode">
+      <a href="https://github.com/vinthony/s2am"><img src="https://img.shields.io/github/stars/vinthony/s2am?style=social"></a>
+      </div>
+      
+
+      </div>
+    <div style="clear:both"></div>
+    <!-- <a href="/academic/publication/attention-image-harmonization" class="read-more">Read More</a> -->
+  </article>
+
+
+  
+      
+        <article class="post">
+      
+  
+
+
+    <!-- <div style="position: relative; left:-50px; font-size: 18px;">2020</div> -->
+
+    <!-- <div style="text-align:center;"><img class="teaser-img" src="./images/shadow.gif"> </div> -->
+
+    <div class="teaser-container">
+      <img class="teaser-left" src="../../vinthony.github.io/academic/images/shadow.gif">
+    </div>
+
+    <div class="papertitle entry">Towards Ghost-free Shadow Removal via Dual Hierarchical Aggregation Network and Shadow Matting GAN </div>
+
+    <div class="entry authors-entry">
+      <b>Xiaodong Cun</b>,  <a href="http://www.cis.umac.mo/~cmpun/">Chi-Man Pun</a>, Cheng Shi
+    </div>
+
+    <div class="entry">
+        <i>AAAI Conference on Artificial Intelligence (<b>AAAI</b>)</i>, <i>2020</i>
+        
+    </div>
+
+    <div class="entry user-info">
+
+      
+      <a class="links" target="_blank" href="https://arxiv.org/abs/1911.08718" rel="paperurl">arXiv</a>
+      
+
+      
+
+      
+      /
+      <a class="links" target="_blank" href="https://colab.research.google.com/drive/1cJ_dsBUXFaFtjoZB9gDYeahjmysnvnTq?usp=sharing" rel="paperurl">Online Demo</a>
+      
+
+      
+
+      
+      /
+      <a target="_blank" href="https://github.com/vinthony/ghost-free-shadow-removal">Github</a>
+      
+
+      
+      <div style="display: inline-block;float:right" class="xcode">
+      <a href="https://github.com/vinthony/ghost-free-shadow-removal"><img src="https://img.shields.io/github/stars/vinthony/ghost-free-shadow-removal?style=social"></a>
+      </div>
+      
+
+      </div>
+    <div style="clear:both"></div>
+    <!-- <a href="/academic/publication/shadow-removal" class="read-more">Read More</a> -->
+  </article>
+
+
+  
+      
+        <article class="post">
+      
+  
+
+
+    <!-- <div style="position: relative; left:-50px; font-size: 18px;">2018</div> -->
+
+    <!-- <div style="text-align:center;"><img class="teaser-img" src="./images/dafrn.png"> </div> -->
+
+    <div class="teaser-container">
+      <img class="teaser-left" src="../../vinthony.github.io/academic/images/dafrn.png">
+    </div>
+
+    <div class="papertitle entry">Depth Assisted Full Resolution Network for Single Image based View Synthesis</div>
+
+    <div class="entry authors-entry">
+      <b>Xiaodong Cun</b>, <a href="http://xufeng.site/">Feng Xu</a>, <a href="http://www.cis.umac.mo/~cmpun/">Chi-Man Pun</a>, <a href="https://scholar.google.com/citations?user=hMBA1REAAAAJ&amp;hl=zh-CN">Hao Gao</a>
+    </div>
+
+    <div class="entry">
+        <i><b>SIGGRAPH Poster</b></i>, <i>2018</i>
+        
+         /
+          <i>IEEE CG&amp;A</i>, <i>2018</i>
+        
+    </div>
+
+    <div class="entry user-info">
+
+      
+      <a class="links" target="_blank" href="https://arxiv.org/abs/1711.06620" rel="paperurl">arXiv</a>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      </div>
+    <div style="clear:both"></div>
+    <!-- <a href="/academic/publication/depth-assisted-frn" class="read-more">Read More</a> -->
+  </article>
+
+</div>
+
+
+<div id="Misc" class="xtitle">Talks</div>
+<ul style="line-height: 2em; margin-top:0px">
+<li> 2023.9.30. Applications of AIGC, Kwai (Kuaishou) Technology. Hosted by Dr. <a href="https://www.xtao.website/"> Xin Tao</a>. </li>
+<li> 2023.6.30. AIGC related Applications, HIT SZ. Hosted by <a href="https://sunbowliu.github.io/">Prof. Xuebo Liu</a>.  </li>
+<li> 2023.6.16. <a href="https://www.fst.um.edu.mo/event/unlocking-the-ability-of-large-text-to-image-model-new-applications-and-new-opportunities/">Unlocking the ability of large text-to-image model: new applications and new opportunities</a>, University of Macau. Hosted by <a href="https://www.cis.um.edu.mo/~cmpun/">Prof. Chi-Man Pun</a>. </li>
+</ul>
+
+<div id="Academic Services" class="xtitle"> Previous Interns <span style="color:#333;font-size: 14px; font-family: Helvetica, Arial, sans-serif; "> ( * indicate their first top-tier paper through cooperation ) </span> </div>
+<ul style="line-height: 2em;  margin-top:0px">
+<li> <a href="https://zhendongwang6.github.io/">Zhendong Wang*</a> (2020/21), HIT(SZ). Co-Supervised w/ <a href="https://people.ucas.ac.cn/~jzliu?language=en">Prof. Jianzhuang Liu</a> @ Huawei Noah's Ark Lab  (<b>CVPR 2022</b>) </li>
+<li> Jingtang Liang* (2021.03 - 2021.09), Master@University Macau.  (<b>ECCV 2022</b>) </li>
+<li> Kun Chen* (2021.10 - 2022.06), Master@Xidian University ➡️ Ph.D@Xidian University. (<b>SIGGRAPH Asia 2022</b>) </li>
+<li> Wenxuan Zhang* (2021.12 - 2022.12), Master@XJTU ➡️ Ph.D@XJTU. (<b>CVPR 2023</b>)</li>
+<li> <a href="https://cxh.netlify.app/">Xuhang Chen*</a> (2021.10 - 2022.10), Ph.D@University of Macau (<b>ICASSP 2023</b>, <b>ICCV 2023</b>) </li>
+<li> Yihao Zhi* (2022.08 - 2023.03), Master@Shanghai Tech University ➡️ Ph.D@CUHK-SZ (<b>ICCV 2023</b>) </li>
+<li> <a href="https://chenyangqiqi.github.io/">Chenyang Qi</a> (2022.12 - 2023.05), Ph.D@HKUST (<b>ICCV 2023 Oral</b>) </li>
+<li> <a href="https://vvictoryuki.github.io/website/">Jiwen Yu</a> (2023.04 - 2024.01), Master@Peking University ➡️ Ph.D@HKU (<b>ECCV 2024 Submission</b>) </li>
+<li> <a href="https://scholar.google.com/citations?user=WWb7Y7AAAAAJ&amp;hl=zh-CN&amp;oi=sra">Yaofang Liu*</a> (2023.07 - 2024.01), Ph.D@City University of Hong Kong (<b>CVPR 2024</b>)</li>
+<li> <a href="https://myniuuu.github.io/">Muyao Niu</a> (2023.12 - 2024.06), Master@Tokyo University (<b>ECCV 2024</b>) </li>
+<li> Yudian Zheng* (2023.07 - Now), Master@Saarland University ➡️ Ph.D@University of Macau (<b>Eurographics 2024</b>) </li>
+<li> <a href="https://scholar.google.com/citations?user=As9gQZ0AAAAJ&amp;hl=zh-CN">Weihuang Liu*</a> (2021.12 - Now), Ph.D@University of Macau. (<b>AAAI 2023 Oral, CVPR 2023, CVPR 2024, PR 2024</b>)</li>
+</ul>
+
+<div id="Misc" class="xtitle"> Misc</div>
+<ul style="list-style: none;line-height: 2em;padding-left: 0; margin-top:0px">
+<li>🎓 If you are looking for talent <span style="text-decoration:line-through">student</span> professor on Machine Translation, please checkout my friend <a target="_blank" href="https://sunbowliu.github.io/">Xuebo Liu</a>. </li>
+<li>🎴 Level 19 (failed to level 20) in <a target="_blank" href="https://store.steampowered.com/app/646570/Slay_the_Spire/">Slay the Spire</a>. More than 10k death in <a href="http://www.celestegame.com/" target="_blank">Celeste</a>. </li>
+<li>🏃 Workout often &amp; lose weight <span style="text-decoration:line-through">10kg</span> 7.5kg &amp; 200+ hours in <a target="_blank" href="https://www.nintendo.com/games/detail/fitness-boxing-switch/">Fitness Boxing</a> </li>
+<li>🎮 Cloud player of <a href="https://www.dota2.com/home">DOTA 2</a>, ancient player of <a href="https://en.wikipedia.org/wiki/FreeStyle_Street_Basketball">Freestyle</a>, just ordinary player. </li>
+<li>👨‍💻 Out of fashion front-end engineer. Try this website template at <a target="_blank" href="https://github.com/vinthony/academic">Github</a>.</li>
+<li>💪 I also (try to) practice <a href="http://slow-science.org/">Slow Science</a>, inspired by <a href="https://people.eecs.berkeley.edu/~efros/">Alexei (Alyosha) Efros</a>. </li>
+<li>🌈 The color of this page is <a href="https://en.wikipedia.org/wiki/Herm%C3%A8s">Hermes Orange</a>.  </li>
+<li>💵 Lose the wallet of 0.2 <a target="_blank" href="https://www.google.com.hk/search?q=btc&amp;rlz=1C5CHFA_enUS903US903&amp;oq=btc&amp;aqs=chrome.0.69i59j35i39j0l3j69i60l2j69i61.1806j1j1&amp;sourceid=chrome&amp;ie=UTF-8"> BTC</a> in 2013. </li>
+<li>☕️ A big fan of Coffee and Tea. </li>
+<li><a class="emojilink" target="_blank" href="https://vinthony.github.io/academicpages.github.io/talkmap.html">❤️</a> �&nbsp;�&nbsp;Since 2019.4.13 </li>
+</ul>
+  </div>
+<!--     <div class="wrapper-footer">
+    <div class="container">
+      <footer class="footer">
+      </footer>
+    </div>
+  </div>
+-->
+  
+
+
+
+
+
+</body></html>
