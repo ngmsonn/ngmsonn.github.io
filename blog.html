@@ -6,6 +6,46 @@
     <title>Nguyen Son | Blog</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="icon.ico">
+    <style>
+        :root {
+            --primary-color: #2c80b9;
+            --text-color: #333;
+            --light-gray: #666;
+        }
+
+        .blog-posts h2 {
+            margin-bottom: 2rem;
+        }
+
+        .post {
+            margin-bottom: 3rem;
+        }
+
+        .post h3 {
+            margin: 0;
+        }
+
+        .post h3 a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .post-meta {
+            color: var(--light-gray);
+            font-size: 0.9rem;
+            margin: 0.5rem 0;
+        }
+
+        .read-time {
+            color: var(--light-gray);
+            font-size: 0.9rem;
+        }
+
+        .tldr {
+            margin-top: 1rem;
+            font-style: italic;
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -58,7 +98,20 @@
         </aside>
 
         <main class="main-content">
-            
+            <div class="blog-posts">
+                <h2>Blog posts</h2>
+                
+                <div class="post">
+                    <h3><a href="#">Tiêu đề</a></h3>
+                    <div class="post-meta">
+                        <span>Published: Jan 5, 2025</span> 
+                        <!-- <span class="read-time">2 minute read</span> -->
+                    </div>
+                    <p>Mô tả</p>
+                </div>
+    
+                
+            </div>
         </main>
     </div>
 
