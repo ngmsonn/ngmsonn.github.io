@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nguyen Son | Blog</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
     <link rel="icon" type="image/x-icon" href="icon.ico">
     <style>
         :root {
@@ -45,9 +46,56 @@
             margin-top: 1rem;
             font-style: italic;
         }
+
+
+        /* */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2rem;
+            gap: 1rem;
+        }
+
+        .pagination button {
+            color: var(--text-color);
+            background: none;
+            border: none;
+            padding: 8px 12px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .pagination button:hover:not(.active):not(:disabled) {
+            color: var(--primary-color);
+        }
+
+        .pagination button.active {
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        .pagination button:disabled {
+            color: #ccc;
+            cursor: not-allowed;
+        }
+
+        /* Style specifically for Previous/Next buttons */
+        #prevBtn, #nextBtn {
+            color: var(--text-color);
+            font-weight: normal;
+        }
+
+        #prevBtn:hover:not(:disabled), 
+        #nextBtn:hover:not(:disabled) {
+            color: var(--primary-color);
+        }
+    
     </style>
 </head>
 <body>
+
     <nav>
         <div class="nav-container">
             <a href="index.html" class="nav-brand">Nguyen Son</a>
@@ -60,11 +108,13 @@
                 <a href="index.html">Home</a>
                 <a href="publications.html">Publications</a>
                 <a href="teaching.html">Teaching</a>
+                <a href="talks.html">Talks</a>
                 <a href="projects.html">Projects</a>
                 <a href="blog.html">Blog</a>
                 <a href="files/resume_nguyen_son.pdf">CV</a>
                 <a href="https://www.youtube.com/@ngmson_ai">Youtube</a>
             </div>
+            
         </div>
     </nav>
 
@@ -96,25 +146,143 @@
                 
             </div>
         </aside>
-
-        <main class="main-content">
-            <div class="blog-posts">
-                <h2>Blog posts</h2>
-                
-                <div class="post">
-                    <h3><a href="#">Tiêu đề</a></h3>
-                    <div class="post-meta">
-                        <span>Published: Jan 5, 2025</span> 
-                        <!-- <span class="read-time">2 minute read</span> -->
-                    </div>
-                    <p>Mô tả</p>
-                </div>
     
-                
+        <main class="main-content">
+            <div class="blog-posts" id="blogPosts">
+                <!-- Posts will be dynamically loaded here -->
+            </div>
+
+            <div class="pagination" id="pagination">
+                <button id="prevBtn" onclick="previousPage()">&laquo; Previous</button>
+                <div id="pageNumbers"></div>
+                <button id="nextBtn" onclick="nextPage()">Next &raquo;</button>
             </div>
         </main>
     </div>
 
+    <script>
+        // Blog posts data
+        const posts = [
+            {
+                title: 'Ebook "Machine Learning for Science"',
+                url: 'posts/2025/1_ml4s.html',
+                date: 'Jan 5, 2025',
+                description: '"Machine Learning for Science" là cuốn sách điện tử đầu tiên tôi bắt tay vào viết như một tài liệu tham khảo dành cho sinh viên chuyên ngành khoa học cơ bản.'
+            },
+            {
+                title: 'Introduction to Graph Machine Learning',
+                url: 'posts/2024/2_graph_ml.html',
+                date: 'Dec 15, 2024',
+                description: 'A comprehensive guide to understanding the basics of Graph Neural Networks and their applications in chemistry.'
+            },
+            {
+                title: 'Optimization Methods in Machine Learning',
+                url: 'posts/2024/3_optimization.html',
+                date: 'Nov 30, 2024',
+                description: 'Deep dive into various optimization techniques used in modern machine learning algorithms.'
+            },
+            {
+                title: 'Applied Chemometrics: Data Analysis in Chemistry',
+                url: 'posts/2024/4_chemometrics.html',
+                date: 'Oct 20, 2024',
+                description: 'Exploring statistical methods and computational techniques in chemical data analysis.'
+            },
+            {
+                title: 'AI Applications in Chemistry Research',
+                url: 'posts/2024/5_ai_chemistry.html',
+                date: 'Sep 5, 2024',
+                description: 'Overview of how artificial intelligence is transforming modern chemistry research and drug discovery.'
+            },
+            // Add your additional posts here following the same structure
+            {
+                title: 'Second Page Post 1',
+                url: 'posts/2024/6_post.html',
+                date: 'Aug 15, 2024',
+                description: 'Description for second page post 1'
+            },
+            {
+                title: 'Second Page Post 2',
+                url: 'posts/2024/7_post.html',
+                date: 'Aug 1, 2024',
+                description: 'Description for second page post 2'
+            }
+            // Continue adding more posts as needed
+        ];
+
+        // Pagination settings
+        const postsPerPage = 5;
+        let currentPage = 1;
+        const totalPages = Math.ceil(posts.length / postsPerPage);
+
+        // Function to display posts for current page
+        function displayPosts() {
+            const start = (currentPage - 1) * postsPerPage;
+            const end = start + postsPerPage;
+            const currentPosts = posts.slice(start, end);
+
+            const blogPostsContainer = document.getElementById('blogPosts');
+            blogPostsContainer.innerHTML = '';
+
+            currentPosts.forEach(post => {
+                const postHTML = `
+                    <div class="post">
+                        <h3><a href="${post.url}">${post.title}</a></h3>
+                        <div class="post-meta">
+                            <span>Published: ${post.date}</span>
+                        </div>
+                        <p>${post.description}</p>
+                    </div>
+                `;
+                blogPostsContainer.innerHTML += postHTML;
+            });
+
+            updatePagination();
+        }
+
+        // Function to update pagination UI
+        function updatePagination() {
+            const pageNumbers = document.getElementById('pageNumbers');
+            pageNumbers.innerHTML = '';
+            
+            for (let i = 1; i <= totalPages; i++) {
+                const button = document.createElement('button');
+                button.textContent = i;
+                button.onclick = () => goToPage(i);
+                if (i === currentPage) {
+                    button.classList.add('active');
+                }
+                pageNumbers.appendChild(button);
+            }
+
+            document.getElementById('prevBtn').disabled = currentPage === 1;
+            document.getElementById('nextBtn').disabled = currentPage === totalPages;
+        }
+
+        // Navigation functions
+        function previousPage() {
+            if (currentPage > 1) {
+                currentPage--;
+                displayPosts();
+            }
+        }
+
+        function nextPage() {
+            if (currentPage < totalPages) {
+                currentPage++;
+                displayPosts();
+            }
+        }
+
+        function goToPage(page) {
+            currentPage = page;
+            displayPosts();
+        }
+
+        // Initialize the blog
+        document.addEventListener('DOMContentLoaded', displayPosts);
+    </script>
+
     <script src="script.js"></script>
 </body>
 </html>
+
