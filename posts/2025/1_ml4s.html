@@ -6,6 +6,36 @@
     <title>Nguyen Son</title>
     <link rel="stylesheet" href="../../styles.css">
     <link rel="icon" type="image/x-icon" href="../../icon.ico">
+    <style>
+        :root {
+    --primary-color: #2c80b9;
+    --text-color: #333;
+    }
+
+    .tags {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #f0f0f0;
+    color: var(--text-color);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.tag:hover {
+    background-color: var(--primary-color);
+    color: white;
+    cursor: default;
+}
+    </style>
 </head>
 <body>
     <nav>
@@ -24,6 +54,7 @@
                 <a href="../../blog.html">Blog</a>
                 <a href="../../files/resume_nguyen_son.pdf">CV</a>
                 <a href="https://www.youtube.com/@ngmson_ai">Youtube</a>
+                
             </div>
         </div>
     </nav>
@@ -59,20 +90,20 @@
 
         <main class="main-content">
             <section>
-                <h1>Ebook "Machine Learning for Science"</h1>
-                <p>I am currently a fourth-year student at the <b>University of Science, Vietnam National University</b>. 
-                   I serve as the research team leader at the <b>Artificial Intelligence - Analytical Chemistry Laboratory</b> 
-                   under the supervision of <b>Associate Professor Dr. Ta Thi Thao</b>. 
-                   Additionally, I am a student at the <b>Products Chemistry Laboratory</b>, 
-                   guided by <b>Associate Professor Dr. Phan Minh Giang</b></p>
-                <p>Previously, in 2022 and 2023, I was a member of the Computational Chemistry Laboratory and the Biochemistry Laboratory at the Institute of Natural Products Chemistry, Vietnam Academy of Science and Technology. </p>
-                
+                <h1>eBook "Machine Learning for the Science"</h1>
+                <div class="tags">
+                    <span class="tag">Machine Learning</span>
+                    <span class="tag">eBook</span>
+
+                </div>
             </section>
+            
 
             
         </main>
     </div>
 
     <script src="script.js"></script>
+    
 </body>
 </html>
