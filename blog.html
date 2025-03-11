@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,8 +48,62 @@
             font-style: italic;
         }
 
+        /* Tags styling */
+        .post-tags {
+            margin-top: 0.5rem;
+        }
 
-        /* */
+        .tag {
+            display: inline-block;
+            background-color: #f0f0f0;
+            color: var(--text-color);
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-right: 8px;
+            margin-bottom: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .tag:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .tags-section {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid #eee;
+        }
+
+        .tags-section h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+            color: var(--text-color);
+        }
+        .reset-filter {
+        font-size: 0.9rem;
+        color: var(--primary-color);
+        cursor: pointer;
+        padding: 4px 8px;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+        margin-left: 8px;
+    }
+
+    .reset-filter:hover {
+        background-color: var(--primary-color);
+        color: white;
+    }
+
+        .popular-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        /* Pagination styling */
         .pagination {
             display: flex;
             justify-content: center;
@@ -81,7 +136,6 @@
             cursor: not-allowed;
         }
 
-        /* Style specifically for Previous/Next buttons */
         #prevBtn, #nextBtn {
             color: var(--text-color);
             font-weight: normal;
@@ -91,11 +145,9 @@
         #nextBtn:hover:not(:disabled) {
             color: var(--primary-color);
         }
-    
     </style>
 </head>
 <body>
-
     <nav>
         <div class="nav-container">
             <a href="index.html" class="nav-brand">Nguyen Son</a>
@@ -114,7 +166,6 @@
                 <a href="files/resume_nguyen_son.pdf">CV</a>
                 <a href="https://www.youtube.com/@ngmson_ai">Youtube</a>
             </div>
-            
         </div>
     </nav>
 
@@ -143,13 +194,18 @@
                     <i class="icon-orcid"></i>
                     <span>ORCID</span>
                 </a>
-                
+            </div>
+            <div class="tags-section">
+                <h3>Tags</h3>
+                <div class="popular-tags" id="popularTags">
+                    
+                </div>
             </div>
         </aside>
     
         <main class="main-content">
             <div class="blog-posts" id="blogPosts">
-                <!-- Posts will be dynamically loaded here -->
+               
             </div>
 
             <div class="pagination" id="pagination">
@@ -161,55 +217,150 @@
     </div>
 
     <script>
-        // Blog posts data
+        // Blog posts data with tags
         const posts = [
+            // {
+            //     title: 'Tiêu đề',
+            //     url: 'posts/2025/2_selt-study_ml.html',
+            //     date: 'Feb 23, 2025',
+            //     description: 'Phương pháp tự học "Machine learning" cho sinh viên không phải chuyên ngành Khoa học Máy tính.',
+            //     tags: ['Machine Learning', 'Shares',]
+            // },
+            // Add more posts here
             {
-                title: 'Ebook "Machine Learning for Science"',
+                title: 'eBook "Machine Learning for the Sciences"',
                 url: 'posts/2025/1_ml4s.html',
                 date: 'Jan 5, 2025',
-                description: '"Machine Learning for Science" là cuốn sách điện tử đầu tiên tôi bắt tay vào viết như một tài liệu tham khảo dành cho sinh viên chuyên ngành khoa học cơ bản.'
+                description: '"Machine Learning for the Science" là cuốn sách điện tử đầu tiên tôi bắt tay vào viết như một tài liệu tham khảo dành cho sinh viên chuyên ngành khoa học cơ bản.',
+                tags: ['Machine Learning', 'eBook',]
             },
-            // {
-            //     title: 'Introduction to Graph Machine Learning',
-            //     url: 'posts/2024/2_graph_ml.html',
-            //     date: 'Dec 15, 2024',
-            //     description: 'A comprehensive guide to understanding the basics of Graph Neural Networks and their applications in chemistry.'
-            // },
-            
         ];
 
         // Pagination settings
-        const postsPerPage = 5;
+        const postsPerPage = 10;
         let currentPage = 1;
+        let currentFilter = null;
         const totalPages = Math.ceil(posts.length / postsPerPage);
 
-        // Function to display posts for current page
-        function displayPosts() {
-            const start = (currentPage - 1) * postsPerPage;
-            const end = start + postsPerPage;
-            const currentPosts = posts.slice(start, end);
-
-            const blogPostsContainer = document.getElementById('blogPosts');
-            blogPostsContainer.innerHTML = '';
-
-            currentPosts.forEach(post => {
-                const postHTML = `
-                    <div class="post">
-                        <h3><a href="${post.url}">${post.title}</a></h3>
-                        <div class="post-meta">
-                            <span>Published: ${post.date}</span>
-                        </div>
-                        <p>${post.description}</p>
-                    </div>
-                `;
-                blogPostsContainer.innerHTML += postHTML;
+        function getAllTags() {
+            const tagCount = {};
+            posts.forEach(post => {
+                if (post.tags) {
+                    post.tags.forEach(tag => {
+                        tagCount[tag] = (tagCount[tag] || 0) + 1;
+                    });
+                }
             });
-
-            updatePagination();
+            return tagCount;
         }
 
-        // Function to update pagination UI
-        function updatePagination() {
+        function displayPopularTags() {
+            const tagCount = getAllTags();
+            const popularTagsContainer = document.getElementById('popularTags');
+            popularTagsContainer.innerHTML = '';
+            
+            Object.entries(tagCount)
+                .sort((a, b) => b[1] - a[1])
+                .forEach(([tag, count]) => {
+                    const tagElement = document.createElement('a');
+                    tagElement.href = '#';
+                    tagElement.className = 'tag';
+                    tagElement.textContent = `${tag} (${count})`;
+                    tagElement.onclick = (e) => {
+                        e.preventDefault();
+                        filterByTag(tag);
+                    };
+                    popularTagsContainer.appendChild(tagElement);
+                });
+        }
+
+        function filterByTag(tag) {
+            currentFilter = tag;
+            const filteredPosts = posts.filter(post => 
+                post.tags && post.tags.includes(tag)
+            );
+            currentPage = 1;
+            displayFilteredPosts(filteredPosts);
+        }
+
+        function displayFilteredPosts(filteredPosts) {
+    const start = (currentPage - 1) * postsPerPage;
+    const end = start + postsPerPage;
+    const currentPosts = filteredPosts.slice(start, end);
+
+    const blogPostsContainer = document.getElementById('blogPosts');
+    blogPostsContainer.innerHTML = currentFilter ? 
+        `<h2>Posts tagged with "${currentFilter}" <span class="reset-filter" onclick="resetFilter(); return false;">&times; Clear</span></h2>` : '';
+
+    currentPosts.forEach(post => {
+        const tagsHTML = post.tags ? post.tags.map(tag => 
+            `<a href="#" class="tag" onclick="filterByTag('${tag}'); return false;">${tag}</a>`
+        ).join('') : '';
+
+        const postHTML = `
+            <div class="post">
+                <h3><a href="${post.url}">${post.title}</a></h3>
+                <div class="post-meta">
+                    <span>Published: ${post.date}</span>
+                </div>
+                <p>${post.description}</p>
+                <div class="post-tags">
+                    ${tagsHTML}
+                </div>
+            </div>
+        `;
+        blogPostsContainer.innerHTML += postHTML;
+    });
+
+    updatePagination(filteredPosts.length);
+}
+
+        function resetFilter() {
+            currentFilter = null;
+            currentPage = 1;
+            displayPosts();
+        }
+
+        function displayPosts() {
+            if (currentFilter) {
+                const filteredPosts = posts.filter(post => 
+                    post.tags && post.tags.includes(currentFilter)
+                );
+                displayFilteredPosts(filteredPosts);
+            } else {
+                const start = (currentPage - 1) * postsPerPage;
+                const end = start + postsPerPage;
+                const currentPosts = posts.slice(start, end);
+
+                const blogPostsContainer = document.getElementById('blogPosts');
+                blogPostsContainer.innerHTML = '';
+
+                currentPosts.forEach(post => {
+                    const tagsHTML = post.tags ? post.tags.map(tag => 
+                        `<a href="#" class="tag" onclick="filterByTag('${tag}'); return false;">${tag}</a>`
+                    ).join('') : '';
+
+                    const postHTML = `
+                        <div class="post">
+                            <h3><a href="${post.url}">${post.title}</a></h3>
+                            <div class="post-meta">
+                                <span>Published: ${post.date}</span>
+                            </div>
+                            <p>${post.description}</p>
+                            <div class="post-tags">
+                                ${tagsHTML}
+                            </div>
+                        </div>
+                    `;
+                    blogPostsContainer.innerHTML += postHTML;
+                });
+
+                updatePagination(posts.length);
+            }
+        }
+
+        function updatePagination(totalItems) {
+            const totalPages = Math.ceil(totalItems / postsPerPage);
             const pageNumbers = document.getElementById('pageNumbers');
             pageNumbers.innerHTML = '';
             
@@ -227,7 +378,6 @@
             document.getElementById('nextBtn').disabled = currentPage === totalPages;
         }
 
-        // Navigation functions
         function previousPage() {
             if (currentPage > 1) {
                 currentPage--;
@@ -248,10 +398,12 @@
         }
 
         // Initialize the blog
-        document.addEventListener('DOMContentLoaded', displayPosts);
+        document.addEventListener('DOMContentLoaded', () => {
+            displayPosts();
+            displayPopularTags();
+        });
     </script>
 
     <script src="script.js"></script>
 </body>
 </html>
-
